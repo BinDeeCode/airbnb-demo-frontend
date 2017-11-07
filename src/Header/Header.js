@@ -1,5 +1,6 @@
 import React from "react";
 import "./header_style.css";
+import "../gridstyle.css";
 import logo from "./img/Shape.svg";
 import searchIcon from "./img/searchIcon.svg";
 
@@ -24,47 +25,49 @@ export default function() {
           </div>
           <div className="col-2" />
           <div className="col-4">
-            <ul>
-              <li>
-                <a href="#">
-                  <div>
-                    <span className="menuBorder">
-                      <div className="borderDown">Become a host</div>
-                    </span>
-                  </div>
-                </a>
-              </li>
+            <div className="menuDiv">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div>
+                      <span className="menuBorder">
+                        <div className="borderDown">Become a host</div>
+                      </span>
+                    </div>
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <div>
-                    <span className="menuBorder">
-                      <div className="borderDown">Help</div>
-                    </span>
-                  </div>
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <span className="menuBorder">
+                        <div className="borderDown">Help</div>
+                      </span>
+                    </div>
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <div>
-                    <span className="menuBorder">
-                      <div className="borderDown">Sign Up</div>
-                    </span>
-                  </div>
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <span className="menuBorder">
+                        <div className="borderDown">Sign Up</div>
+                      </span>
+                    </div>
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <div>
-                    <span className="menuBorder">
-                      <div className="borderDown">Log In</div>
-                    </span>
-                  </div>
-                </a>
-              </li>
-            </ul>
+                <li>
+                  <a href="#">
+                    <div>
+                      <span className="menuBorder">
+                        <div className="borderDown">Log In</div>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
