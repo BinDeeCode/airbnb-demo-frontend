@@ -2,7 +2,7 @@
   font-family: Circular Air Book;
   src: url(../fonts/Circular_Air-Book.ttf);
 }
-a > div {
+.menuLinks > div {
   text-decoration: none;
   font-family: Circular Air Book, Arial, Helvetica, sans-serif;
   font-size: 14px;
