@@ -1,6 +1,6 @@
 @font-face {
   font-family: Circular Air Book;
-  src: url(fonts/Circular_Air-Book.ttf);
+  src: url(../fonts/Circular_Air-Book.ttf);
 }
 a > div {
   text-decoration: none;
