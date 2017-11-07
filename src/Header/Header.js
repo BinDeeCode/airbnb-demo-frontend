@@ -28,7 +28,9 @@ export default function() {
               <li>
                 <a href="#">
                   <div>
-                    <div className="menuBorder">Become a host</div>
+                    <span className="menuBorder">
+                      <div className="borderDown">Become a host</div>
+                    </span>
                   </div>
                 </a>
               </li>
@@ -36,7 +38,9 @@ export default function() {
               <li>
                 <a href="#">
                   <div>
-                    <div className="menuBorder">Help</div>
+                    <span className="menuBorder">
+                      <div className="borderDown">Help</div>
+                    </span>
                   </div>
                 </a>
               </li>
@@ -44,7 +48,9 @@ export default function() {
               <li>
                 <a href="#">
                   <div>
-                    <div className="menuBorder">Sign Up</div>
+                    <span className="menuBorder">
+                      <div className="borderDown">Sign Up</div>
+                    </span>
                   </div>
                 </a>
               </li>
@@ -52,7 +58,9 @@ export default function() {
               <li>
                 <a href="#">
                   <div>
-                    <div className="menuBorder">Log In</div>
+                    <span className="menuBorder">
+                      <div className="borderDown">Log In</div>
+                    </span>
                   </div>
                 </a>
               </li>

@@ -14,12 +14,12 @@ a > div {
   padding-right: 15px;
   padding-left: 15px;
 }
-
-.menuLink {
-  height: 200px;
-  width: 200px;
+a:hover .borderDown {
+  border-bottom: 2px solid #383838ab;
 }
-
+.borderDown {
+  height: 28px;
+}
 a {
   text-decoration: none;
 }
@@ -131,7 +131,8 @@ li > div {
 .wrapper {
   height: 80px;
   width: 100%;
-  border-bottom: rgba(72, 72, 72, 0.5) solid 1px;
+  border-bottom: rgba(72, 72, 72, 0.3) solid 1px;
+  background-color: white;
 }
 .search {
   background-color: white;
@@ -145,14 +146,15 @@ li > div {
   border: 0;
   padding-left: 53px;
   border-radius: 4px;
-  border: solid rgba(72, 72, 72, 0.2) 2px;
+  border: solid rgba(72, 72, 72, 0.2) 1px;
   font-family: Circular Air Book, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #383838;
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
 }
 .search:focus {
-  border: solid rgba(72, 72, 72, 0.3) 2px;
+  border: solid rgba(72, 72, 72, 0.3) 1px;
 }
 
 ul {
