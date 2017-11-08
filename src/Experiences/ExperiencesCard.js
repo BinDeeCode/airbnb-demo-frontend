@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import star from "./img/star.png";
-import imgForest from "./expcardbg.png";
 
 const CardDiv = styled.div`
   margin: 0;
