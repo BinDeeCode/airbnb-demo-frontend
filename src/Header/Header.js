@@ -4,6 +4,13 @@ import "../gridstyle.css";
 import logo from "./img/Shape.svg";
 import searchIcon from "./img/searchIcon.svg";
 
+const menuData = [
+  {name: 'Become a host'},
+  {name: 'Help'},
+  {name: 'Sign Up'},
+  {name: 'Log In'},
+]
+
 export default function() {
   return (
     <div className="wrapper">
@@ -27,45 +34,19 @@ export default function() {
           <div className="col-4">
             <div className="menuDiv">
               <ul>
-                <li>
-                  <a href="#" className="menuLinks">
-                    <div>
-                      <span className="menuBorder">
-                        <div className="borderDown">Become a host</div>
-                      </span>
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="menuLinks">
-                    <div>
-                      <span className="menuBorder">
-                        <div className="borderDown">Help</div>
-                      </span>
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="menuLinks">
-                    <div>
-                      <span className="menuBorder">
-                        <div className="borderDown">Sign Up</div>
-                      </span>
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="menuLinks">
-                    <div>
-                      <span className="menuBorder">
-                        <div className="borderDown">Log In</div>
-                      </span>
-                    </div>
-                  </a>
-                </li>
+                {menuData.map(function(el) {
+                  return (
+                    <li>
+                      <a href="#" className="menuLinks">
+                        <div>
+                          <span className="menuBorder">
+                            <div className="borderDown">{el.name}</div>
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           </div>

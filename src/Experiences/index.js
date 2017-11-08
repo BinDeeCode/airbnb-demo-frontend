@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import "../gridstyle.css";
-import ExpCard from "./ExperiencesCard";
+import ExpCard from "./ExperiencesCard.js";
 
 import arrow from "./arrowShape.svg";
-import imgForest from "./expcardbg.png";
+import imgForest from "./img/expcardbg.png";
 
 const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
@@ -29,6 +29,21 @@ const NavSeeAll = styled.nav`
   padding: 5px;
 `;
 
+const contentData = [
+  {
+    img: imgForest,
+    price: '$5',
+    name: 'blabla',
+    reviews: 'xyew tachku',
+  },
+  {
+    img: imgForest,
+    price: '$50',
+    name: 'warn!',
+    reviews: 'obosratcsya',
+  },
+]
+
 export default function() {
   return (
     <div className="container">
@@ -44,38 +59,18 @@ export default function() {
             </NavSeeAll>
           </a>
         </div>
-        <div className="col-3">
-          <ExpCard
-            price="$40"
-            name="Forest therapy"
-            reviews="44"
-            img={imgForest}
-          />
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$69"
-            name="Whale watching"
-            reviews="46"
-            img={imgForest}
-          />
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$100"
-            name="Table Mountain Summit, Cable Car Down"
-            reviews="60"
-            img={imgForest}
-          />
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$35"
-            name="Salsa Night"
-            reviews="44"
-            img={imgForest}
-          />
-        </div>
+        {contentData.map(function(el) {
+          return (
+            <div className="col-3">
+              <ExpCard
+                price={el.price}
+                name={el.name}
+                reviews={el.reviews}
+                img={el.img}
+              />
+            </div>
+          )
+        })}
       </div>
     </div>
   );

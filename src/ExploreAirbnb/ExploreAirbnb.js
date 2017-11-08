@@ -12,6 +12,21 @@ const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
 `;
 
+const card = [
+  {
+    img: card1,
+    name: 'Homes',
+  },
+  {
+    img: card2,
+    name: 'Experiences',
+  },
+  {
+    img: card3,
+    name: 'Restaurants',
+  },
+]
+
 export default function() {
   return (
     <div className="container">
@@ -19,31 +34,18 @@ export default function() {
         <div className="col-12">
           <H2Title>Explore Airbnb</H2Title>
         </div>
-        <div className="col-4">
-          <a href="#">
-            <div className="card">
-              <img src={card1} />
-              <div className="cardText">Homes</div>
+        {card.map(function(el) {
+          return (
+            <div className="col-4">
+                <a href="#">
+                  <div className="card">
+                    <img src={el.img} />
+                    <div className="cardText">{el.name}</div>
+                  </div>
+                </a>
             </div>
-          </a>
-        </div>
-
-        <div className="col-4">
-          <a href="#">
-            <div className="card">
-              <img src={card2} />
-              <div className="cardText">Experiences</div>
-            </div>
-          </a>
-        </div>
-        <div className="col-4">
-          <a href="#">
-            <div className="card">
-              <img src={card3} />
-              <div className="cardText">Restaurants</div>
-            </div>
-          </a>
-        </div>
+          )
+        })}
       </div>
     </div>
   );
