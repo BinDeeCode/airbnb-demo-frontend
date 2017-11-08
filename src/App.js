@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header/Header.js";
 import ExploreAirbnb from "./ExploreAirbnb/ExploreAirbnb";
+import Exp from "./Experiences/index";
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div>
         <Header />
         <ExploreAirbnb />
+        <Exp />
       </div>
     );
   }

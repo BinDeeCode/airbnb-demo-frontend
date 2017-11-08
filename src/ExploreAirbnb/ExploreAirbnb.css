@@ -2,13 +2,6 @@
   font-family: Circular Air Bold;
   src: url(../fonts/Circular_Air-Bold.ttf);
 }
-
-h2 {
-  margin: 0;
-  margin-top: 48px;
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
-}
-
 .card {
   background-color: white;
   height: 72px;

@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Circular Air Book;
+  src: url(./fonts/Circular_Air-Book.ttf);
+
+  font-family: Circular Air Bold;
+  src: url(./fonts/Circular_Air-Bold.ttf);
+
+  font-family: Circular Air Light;
+  src: url(./fonts/Circular_Air-Light.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
