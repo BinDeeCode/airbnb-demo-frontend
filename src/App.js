@@ -6,6 +6,8 @@ import ExploreAirbnb from "./ExploreAirbnb/ExploreAirbnb";
 import Exp from "./Experiences/index";
 import styled from "styled-components";
 import Homes from "./Homes/index.js";
+import Popular from "./Popular";
+import Future from "./Future";
 
 class App extends Component {
   render() {
@@ -15,6 +17,8 @@ class App extends Component {
         <ExploreAirbnb />
         <Exp />
         <Homes />
+        <Popular />
+        <Future />
       </div>
     );
   }

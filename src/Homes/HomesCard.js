@@ -23,14 +23,14 @@ const ImgStar = styled.img`
 `;
 
 const TitleHomesCard = styled.div`
-  font-family: Circular Air Bold;
+  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #383838;
   margin-top: 8px;
 `;
 
 const InfTitle = styled.div`
-  font-family: Circular Air Light;
+  font-family: Circular Air Light, Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #383838;
   margin-top: 2px;
@@ -38,7 +38,7 @@ const InfTitle = styled.div`
 `;
 
 const InfSupershot = styled.div`
-  font-family: Circular Air Book;
+  font-family: Circular Air Book, Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #383838;
   display: flex;
