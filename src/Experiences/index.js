@@ -10,6 +10,8 @@ import img4 from "./img/cardBg3.png";
 import arrow from "./arrowShape.svg";
 import TitleSection from "../TitleSection.js";
 
+import arrowAside from "../arrowAside.svg";
+
 const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
   margin-top: 50px;
@@ -61,10 +63,30 @@ const dataCard = [
   }
 ];
 
+const RelWrap = styled.div`position: relative;`;
+const AsideBut = styled.aside`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  top: 285px;
+  right: 0px;
+  left: 1090px;
+  background: #ffffff;
+  border: 0.5px solid rgba(72, 72, 72, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
+`;
+
 export default function() {
   return (
     <div className="container">
-      <div className="row">
+      <RelWrap className="row">
+        <AsideBut>
+          <img src={arrowAside} alt="" />
+        </AsideBut>
         <TitleSection name="Experiences" links="#" />
 
         {dataCard.map(function(el) {
@@ -79,7 +101,7 @@ export default function() {
             </div>
           );
         })}
-      </div>
+      </RelWrap>
     </div>
   );
 }
