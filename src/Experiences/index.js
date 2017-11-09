@@ -45,19 +45,19 @@ const dataCard = [
     price: "69",
     name: "Whale watching",
     reviews: "46",
-    img: img2
+    img: img4
   },
   {
     price: "72",
     name: "Table Mountain Summit",
     reviews: "34",
-    img: img3
+    img: img2
   },
   {
     price: "38",
     name: "Salsa Night",
     reviews: "65",
-    img: img4
+    img: img3
   }
 ];
 

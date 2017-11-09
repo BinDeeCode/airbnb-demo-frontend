@@ -10,7 +10,11 @@ export default function() {
       <div className="container">
         <div className="row">
           <div className="col-1">
-            <a href="#" className="logoLink">
+            <a
+              href="https://www.airbnb.ru/"
+              target="_blank"
+              className="logoLink"
+            >
               <div className="logoLinkDiv">
                 <img src={logo} className="AirbnbLogo" alt="logo" />
               </div>
@@ -27,7 +31,7 @@ export default function() {
           <div className="col-4">
             <div className="menuDiv">
               <ul>
-                <li>
+                <li className="liStyle">
                   <a href="#" className="menuLinks">
                     <div>
                       <span className="menuBorder">
@@ -37,7 +41,7 @@ export default function() {
                   </a>
                 </li>
 
-                <li>
+                <li className="liStyle">
                   <a href="#" className="menuLinks">
                     <div>
                       <span className="menuBorder">
@@ -47,7 +51,7 @@ export default function() {
                   </a>
                 </li>
 
-                <li>
+                <li className="liStyle">
                   <a href="#" className="menuLinks">
                     <div>
                       <span className="menuBorder">
@@ -57,7 +61,7 @@ export default function() {
                   </a>
                 </li>
 
-                <li>
+                <li className="liStyle">
                   <a href="#" className="menuLinks">
                     <div>
                       <span className="menuBorder">

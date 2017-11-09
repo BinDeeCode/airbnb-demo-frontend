@@ -20,7 +20,7 @@ const Name = styled.div`
 `;
 
 const Price = styled.div`
-  font-family: Circular Air Light, Arial, Helvetica, sans-serif;
+  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #383838;
   line-height: 23px;

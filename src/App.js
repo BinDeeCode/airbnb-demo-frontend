@@ -8,6 +8,7 @@ import styled from "styled-components";
 import Homes from "./Homes/index.js";
 import Popular from "./Popular";
 import Future from "./Future";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <Homes />
         <Popular />
         <Future />
+        <Footer />
       </div>
     );
   }

@@ -37,22 +37,23 @@ export default function() {
       <div className="row">
         <div className="col-12">
           <TitleSection name="Homes" links="#" />
-        </div>
-        <div className="container">
-          <div className="row">
-            {dataHomesCard.map(function(el) {
-              return (
-                <div className="col-4">
-                  <HomesCard
-                    img={el.img}
-                    price={el.price}
-                    name={el.name}
-                    entre={el.entre}
-                    supershot={el.supershot}
-                  />
-                </div>
-              );
-            })}
+
+          <div className="container">
+            <div className="row">
+              {dataHomesCard.map(function(el) {
+                return (
+                  <div className="col-4">
+                    <HomesCard
+                      img={el.img}
+                      price={el.price}
+                      name={el.name}
+                      entre={el.entre}
+                      supershot={el.supershot}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
