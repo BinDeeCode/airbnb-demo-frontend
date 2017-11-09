@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import "../gridstyle.css";
-import ExpCard from "./ExperiencesCard";
+import ExpCard from "./ExperiencesCard.js";
 
+import img1 from "./img/expcardbg.png";
+import img2 from "./img/cardBg1.png";
+import img3 from "./img/cardBg2.png";
+import img4 from "./img/cardBg3.png";
 import arrow from "./arrowShape.svg";
-import imgForest from "./expcardbg.png";
+import TitleSection from "../TitleSection.js";
 
 const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
@@ -27,55 +31,54 @@ const SeeAllButt = styled.div`
 const NavSeeAll = styled.nav`
   margin-top: 57px;
   padding: 5px;
+  margin-left: 5px;
 `;
+
+const dataCard = [
+  {
+    price: "29",
+    name: "Forest therapy",
+    reviews: "44",
+    img: img1
+  },
+  {
+    price: "69",
+    name: "Whale watching",
+    reviews: "46",
+    img: img2
+  },
+  {
+    price: "72",
+    name: "Table Mountain Summit",
+    reviews: "34",
+    img: img3
+  },
+  {
+    price: "38",
+    name: "Salsa Night",
+    reviews: "65",
+    img: img4
+  }
+];
 
 export default function() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-11">
-          <H2Title>Experiences</H2Title>
-        </div>
-        <div className="col-1">
-          <a href="#">
-            <NavSeeAll>
-              <SeeAllButt>See all</SeeAllButt>
-              <img src={arrow} />
-            </NavSeeAll>
-          </a>
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$40"
-            name="Forest therapy"
-            reviews="44"
-            img={imgForest}
-          />
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$69"
-            name="Whale watching"
-            reviews="46"
-            img={imgForest}
-          />
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$100"
-            name="Table Mountain Summit, Cable Car Down"
-            reviews="60"
-            img={imgForest}
-          />
-        </div>
-        <div className="col-3">
-          <ExpCard
-            price="$35"
-            name="Salsa Night"
-            reviews="44"
-            img={imgForest}
-          />
-        </div>
+        <TitleSection name="Experiences" links="#" />
+
+        {dataCard.map(function(el) {
+          return (
+            <div className="col-3">
+              <ExpCard
+                img={el.img}
+                price={el.price}
+                name={el.name}
+                reviews={el.reviews}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

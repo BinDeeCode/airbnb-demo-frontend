@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import star from "./img/star.png";
-import imgForest from "./expcardbg.png";
+import star from "../star.png";
 
 const CardDiv = styled.div`
   margin: 0;
@@ -45,7 +44,7 @@ export default function(props) {
         <CardDiv>
           <Img src={props.img} />
           <DivWrapper>
-            <SpanPrice>{props.price}</SpanPrice>
+            <SpanPrice>${props.price}</SpanPrice>
             <SpanText>{props.name}</SpanText>
           </DivWrapper>
           <DivRait>

@@ -4,6 +4,8 @@ import "./App.css";
 import Header from "./Header/Header.js";
 import ExploreAirbnb from "./ExploreAirbnb/ExploreAirbnb";
 import Exp from "./Experiences/index";
+import styled from "styled-components";
+import Homes from "./Homes/index.js";
 
 class App extends Component {
   render() {
@@ -12,6 +14,7 @@ class App extends Component {
         <Header />
         <ExploreAirbnb />
         <Exp />
+        <Homes />
       </div>
     );
   }
