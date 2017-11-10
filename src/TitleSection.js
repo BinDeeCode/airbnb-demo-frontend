@@ -21,21 +21,24 @@ const SeeAllButt = styled.div`
   margin-top: 1px;
 `;
 
-const NavSeeAll = styled.nav`
+const NavSeeAll = styled.div`
   margin-top: 57px;
   padding: 5px;
-  margin-left: 5px;
+  padding-left: 5px;
   width: 100%;
+  @media (min-width: 576px) and (max-width: 1000px) {
+    padding-left: 60px;
+  }
 `;
 
 export default function(props) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-11">
+        <div className="col-11 col-sm-10">
           <H2Title>{props.name}</H2Title>
         </div>
-        <div className="col-1">
+        <div className="col-1 col-sm-2">
           <a href={props.links}>
             <NavSeeAll>
               <SeeAllButt>See all</SeeAllButt>

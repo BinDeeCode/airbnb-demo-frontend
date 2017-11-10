@@ -41,31 +41,11 @@ const dataFuture = [
   }
 ];
 
-const RelWrap = styled.div`position: relative;`;
-const AsideBut = styled.aside`
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  top: 212px;
-  left: 1465px;
-  background: #ffffff;
-  border: 0.5px solid rgba(72, 72, 72, 0.2);
-  box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
-`;
-
 export default function() {
   return (
     <div calssName="container">
-      <RelWrap className="row">
-        <a href="#">
-          <AsideBut>
-            <img src={arrowAside} alt="" />
-          </AsideBut>{" "}
-        </a>
+      <div className="row">
+        <a href="#" />
         <div className="col-12">
           <TitleSectionNoAllSee name="Featured destinations" links="#" />
 
@@ -81,7 +61,7 @@ export default function() {
             </div>
           </div>
         </div>
-      </RelWrap>
+      </div>
     </div>
   );
 }

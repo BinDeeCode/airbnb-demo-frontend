@@ -14,6 +14,7 @@ import {
 } from "./style.js";
 
 import logo from "./logo.svg";
+import arrow from "./arrowDown.svg";
 
 const data = [
   {
@@ -39,16 +40,17 @@ export default function() {
     <Header>
       <Container className="container">
         <Row className="row">
-          <div className="col-1">
-            <a href="#">
-              <Img src={logo} />{" "}
-            </a>
+          <div className="col-1 col-sm-1">
+            <Logo href="#">
+              <Img src={logo} />
+              <img className="lg-hidden" src={arrow} />
+            </Logo>
           </div>
-          <div className="col-5">
+          <div className="col-5 col-sm-7">
             <Input type="text" placeholder="Try “Miami”" />
           </div>
-          <div className="col-2" />
-          <div className="col-4">
+          <div className="col-2 sm-hidden" />
+          <div className="col-4 sm-hidden">
             <Menu>
               {data.map(function(el) {
                 return (

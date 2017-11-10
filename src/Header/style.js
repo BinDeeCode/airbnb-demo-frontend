@@ -28,6 +28,10 @@ export const Input = styled.input`
   &:focus {
     outline: none;
   }
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    width: 432px;
+  }
 `;
 
 export const Links = styled.a`
@@ -63,3 +67,5 @@ export const Img = styled.img`
   padding: 10px;
   margin-top: 3px;
 `;
+
+export const Logo = styled.a`display: flex;`;

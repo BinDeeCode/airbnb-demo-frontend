@@ -5,10 +5,12 @@ import star from "../star.svg";
 const Cards = styled.div`
   margin: 0;
   padding: 0;
+  height: 420px;
+  width: 230px;
 `;
 const Img = styled.img`
-  width: 100%;
   padding: 0;
+  width: 100%;
 `;
 
 const Title = styled.div`margin-top: 8px;`;
