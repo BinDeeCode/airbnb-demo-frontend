@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import "../gridstyle.css";
-import ExpCard from "./ExperiencesCard.js";
+import Cards from "./Card.js";
 
-import img1 from "./img/expcardbg.png";
-import img2 from "./img/cardBg1.png";
-import img3 from "./img/cardBg2.png";
-import img4 from "./img/cardBg3.png";
+import img1 from "./expcardbg.png";
+import img2 from "./cardBg1.png";
+import img3 from "./cardBg2.png";
+import img4 from "./cardBg3.png";
 import arrow from "./arrowShape.svg";
 import TitleSection from "../TitleSection.js";
 
@@ -21,78 +21,43 @@ const H2Title = styled.h2`
   padding-bottom: 2px;
 `;
 
-const SeeAllButt = styled.div`
-  color: #383838;
-  ont-family: Circular Air Book, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  float: left;
-  padding-right: 8px;
-  margin-top: 1px;
-`;
-
-const NavSeeAll = styled.nav`
-  margin-top: 57px;
-  padding: 5px;
-  margin-left: 5px;
-`;
-
 const dataCard = [
   {
-    price: "29",
+    price: 29,
     name: "Forest therapy",
-    reviews: "44",
+    reviews: 44,
     img: img1
   },
   {
-    price: "69",
+    price: 69,
     name: "Whale watching",
-    reviews: "46",
+    reviews: 46,
     img: img4
   },
   {
-    price: "72",
+    price: 72,
     name: "Table Mountain Summit",
     reviews: "34",
     img: img2
   },
   {
-    price: "38",
+    price: 38,
     name: "Salsa Night",
-    reviews: "65",
+    reviews: 65,
     img: img3
   }
 ];
 
-const RelWrap = styled.div`position: relative;`;
-const AsideBut = styled.aside`
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  top: 285px;
-  right: 0px;
-  left: 1090px;
-  background: #ffffff;
-  border: 0.5px solid rgba(72, 72, 72, 0.2);
-  box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
-`;
-
 export default function() {
   return (
     <div className="container">
-      <RelWrap className="row">
-        <AsideBut>
-          <img src={arrowAside} alt="" />
-        </AsideBut>
+      <div className="row">
         <TitleSection name="Experiences" links="#" />
 
         {dataCard.map(function(el) {
           return (
             <div className="col-3">
-              <ExpCard
+              <Cards
                 img={el.img}
                 price={el.price}
                 name={el.name}
@@ -101,7 +66,7 @@ export default function() {
             </div>
           );
         })}
-      </RelWrap>
+      </div>
     </div>
   );
 }

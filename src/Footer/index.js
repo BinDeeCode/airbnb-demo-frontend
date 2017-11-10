@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import "../gridstyle.css";
-import "./style.css";
-import logo from "./img/Shape.svg";
-import inst from "./img/instagram.svg";
-import facebook from "./img/facebook.svg";
-import twitter from "./img/twitter.svg";
+import logo from "./logo.svg";
+import inst from "./instagram.svg";
+import facebook from "./facebook.svg";
+import twitter from "./twitter.svg";
 
 import { dataHosting, dataAirbnb, dataDiscover } from "./data.js";
 import {
@@ -105,7 +104,7 @@ export default function() {
           </FlexDiv>
           <FlexDiv className="col-4">
             <a href="#">
-              <div>Terms</div>
+              <DivLogoText>Terms</DivLogoText>
             </a>
             <a href="#">
               <DivLogoText>Privacy</DivLogoText>

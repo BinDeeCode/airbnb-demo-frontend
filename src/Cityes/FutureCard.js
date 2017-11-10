@@ -4,7 +4,7 @@ import "../gridstyle.css";
 
 const ImgCard = styled.img`width: 100%;`;
 const City = styled.div`
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #383838;
   margin-top: 8px;

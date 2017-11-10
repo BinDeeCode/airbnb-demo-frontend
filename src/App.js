@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./Header/Header.js";
-import ExploreAirbnb from "./ExploreAirbnb/ExploreAirbnb";
-import Exp from "./Experiences/index";
 import styled from "styled-components";
-import Homes from "./Homes/index.js";
+
+import Header from "./Header";
+import ExploreAirbnb from "./ExploreAirbnb/ExploreAirbnb";
+import Experiences from "./Experiences";
+import Homes from "./Homes";
 import Popular from "./Popular";
-import Future from "./Future";
+import Cityes from "./Cityes";
 import Footer from "./Footer";
 
 class App extends Component {
@@ -16,10 +16,10 @@ class App extends Component {
       <div>
         <Header />
         <ExploreAirbnb />
-        <Exp />
+        <Experiences />
         <Homes />
         <Popular />
-        <Future />
+        <Cityes />
         <Footer />
       </div>
     );

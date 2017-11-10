@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../gridstyle.css";
-import arrowBot from "./img/arrowBot.svg";
+import arrowBot from "./arrowBot.svg";
 export const Wrapper = styled.div`
   width: 100%;
   margin-top: 64px;
@@ -40,7 +40,7 @@ export const InputList = styled.select`
 export const H3 = styled.div`
   padding: 0;
   padding-bottom: 16px;
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 19px;
   color: #3838383;
@@ -53,9 +53,12 @@ export const LinksDiv = styled.nav`
 
 export const LinksText = styled.a`
   font-size: 15px;
-  font-family: Circular Air Book, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
   color: #636363;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const ImgLogo = styled.img``;
@@ -74,10 +77,12 @@ export const FlexImg = styled.div`
 `;
 
 export const DivLogoText = styled.div`
-  font-family: Circular Air Book, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
   font-size: 15px;
-  color: #636363;
+  text-decoration: none;
+  color: #383838;
   margin-left: 16px;
+  width: 100%;
 `;
 
 export const ImgSoc = styled.img`

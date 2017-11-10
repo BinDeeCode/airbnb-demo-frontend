@@ -67,10 +67,7 @@ export default function() {
           </AsideBut>{" "}
         </a>
         <div className="col-12">
-          <TitleSectionNoAllSee
-            name="Popular reservations around the world"
-            links="#"
-          />
+          <TitleSectionNoAllSee name="Featured destinations" links="#" />
 
           <div className="container">
             <div className="row">

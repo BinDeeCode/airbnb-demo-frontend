@@ -3,10 +3,10 @@ import styled from "styled-components";
 import TitleSection from "../TitleSection";
 import "../gridstyle.css";
 import PopularCard from "./PopularCard.js";
-import img1 from "./img/img1.png";
-import img2 from "./img/img2.png";
-import img3 from "./img/img3.png";
-import img4 from "./img/img4.png";
+import img1 from "./img1.png";
+import img2 from "./img2.png";
+import img3 from "./img3.png";
+import img4 from "./img4.png";
 
 import arrowAside from "../arrowAside.svg";
 
@@ -37,29 +37,10 @@ const dataPopularCard = [
   }
 ];
 
-const RelWrap = styled.div`position: relative;`;
-const AsideBut = styled.aside`
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  top: 180px;
-  left: 1483px;
-  background: #ffffff;
-  border: 0.5px solid rgba(72, 72, 72, 0.2);
-  box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
-`;
-
 export default function() {
   return (
     <div calssName="container">
-      <RelWrap className="row">
-        <AsideBut>
-          <img src={arrowAside} alt="" />
-        </AsideBut>
+      <div className="row">
         <div className="col-12">
           <TitleSection name="Popular reservations around the world" />
 
@@ -80,7 +61,7 @@ export default function() {
             </div>
           </div>
         </div>
-      </RelWrap>
+      </div>
     </div>
   );
 }

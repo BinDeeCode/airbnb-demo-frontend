@@ -4,7 +4,7 @@ import "../gridstyle.css";
 
 const ImgCard = styled.img`width: 100%;`;
 const CookName = styled.div`
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
   font-size: 10px;
   color: #383838;
   line-height: 13px;
@@ -12,7 +12,7 @@ const CookName = styled.div`
 `;
 
 const Name = styled.div`
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #383838;
   line-height: 23px;
@@ -20,7 +20,7 @@ const Name = styled.div`
 `;
 
 const Price = styled.div`
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
+  font-family: "Circular Air Light", Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #383838;
   line-height: 23px;

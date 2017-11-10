@@ -1,9 +1,9 @@
 import React from "react";
 import "../gridstyle.css";
 import "./ExploreAirbnb.css";
-import card1 from "./img/cardback_1.png";
-import card2 from "./img/cardback_2.png";
-import card3 from "./img/cardback_3.png";
+import card1 from "./cardback_1.png";
+import card2 from "./cardback_2.png";
+import card3 from "./cardback_3.png";
 import styled from "styled-components";
 
 const H2Title = styled.h2`

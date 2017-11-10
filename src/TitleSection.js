@@ -25,7 +25,7 @@ const NavSeeAll = styled.nav`
   margin-top: 57px;
   padding: 5px;
   margin-left: 5px;
-  float: right;
+  width: 100%;
 `;
 
 export default function(props) {
