@@ -32,6 +32,9 @@ export const Input = styled.input`
   @media (min-width: 576px) and (max-width: 992px) {
     width: 432px;
   }
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 export const Links = styled.a`
