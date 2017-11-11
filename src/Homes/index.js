@@ -32,6 +32,22 @@ const dataHomesCard = [
   }
 ];
 
+const Aside = styled.div`
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  bottom: 155px;
+  left: calc(95% + 8px);
+  background-color: #ffffff;
+  background-image: url(${arrowAside});
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0.5px solid rgba(72, 72, 72, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
+`;
+
 export default function() {
   return (
     <div calssName="container">
@@ -54,6 +70,11 @@ export default function() {
                 </div>
               );
             })}
+          </div>
+          <div className="rows sm-hidden xs-hidden">
+            <a href="#">
+              <Aside />
+            </a>
           </div>
         </div>
       </div>

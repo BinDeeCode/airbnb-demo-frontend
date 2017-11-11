@@ -15,14 +15,11 @@ class App extends Component {
     return (
       <div>
         <Header />
-
         <ExploreAirbnb />
-
         <Experiences />
-
         <Homes />
-        {/* <Popular />
-        <Cityes /> */}
+        <Popular />
+        <Cityes />
         <Footer />
       </div>
     );
