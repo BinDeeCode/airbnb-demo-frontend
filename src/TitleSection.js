@@ -22,23 +22,28 @@ const SeeAllButt = styled.div`
 `;
 
 const NavSeeAll = styled.div`
-  margin-top: 57px;
-  padding: 5px;
-  padding-left: 5px;
-  width: 100%;
-  @media (min-width: 576px) and (max-width: 1000px) {
-    padding-left: 60px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 38px;
+  padding-right: 10px;
   }
+`;
+
+const Row = styled.div`
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
 `;
 
 export default function(props) {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-11 col-sm-10">
+      <Row className="row">
+        <div className="col-11 col-sm-9 col-xs-9">
           <H2Title>{props.name}</H2Title>
         </div>
-        <div className="col-1 col-sm-2">
+        <div className="col-1 col-sm-3 col-xs-3">
           <a href={props.links}>
             <NavSeeAll>
               <SeeAllButt>See all</SeeAllButt>
@@ -46,7 +51,7 @@ export default function(props) {
             </NavSeeAll>
           </a>
         </div>
-      </div>
+      </Row>
     </div>
   );
 }

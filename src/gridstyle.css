@@ -17,19 +17,25 @@ body {
   margin: 0;
   padding: 0;
 }
-.row {
+.rows {
   display: flex;
   flex-wrap: wrap;
 
   margin-left: -8px;
   margin-right: -8px;
 }
-
 @media (min-width: 992px) {
   .lg-hidden {
     display: none;
   }
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -8px;
+    margin-right: -8px;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -121,11 +127,13 @@ body {
     display: none;
   }
   .rowscroll {
+    display: flex;
+    overflow-y: scroll;
     flex-wrap: nowrap;
   }
   .container {
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
   }
   .col-sm-1 {
@@ -214,11 +222,14 @@ body {
     display: none;
   }
   .rowscroll {
+    display: flex;
     flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100%;
   }
   .container {
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
   }
   .col-xs-1 {

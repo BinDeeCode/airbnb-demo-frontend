@@ -10,11 +10,15 @@ const City = styled.div`
   margin-top: 8px;
 `;
 
+const Wrapper = styled.div`width: 147px;`;
+
 export default function(props) {
   return (
     <a href="#">
-      <ImgCard src={props.img} />
-      <City>{props.city}</City>
+      <Wrapper>
+        <ImgCard src={props.img} />
+        <City>{props.city}</City>
+      </Wrapper>
     </a>
   );
 }

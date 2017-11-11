@@ -46,14 +46,14 @@ export default function() {
     <div calssName="container">
       <div className="row">
         <a href="#" />
-        <div className="col-12">
+        <div className="col-12 col-sm-12 col-xs-12">
           <TitleSectionNoAllSee name="Featured destinations" links="#" />
 
           <div className="container">
-            <div className="row">
+            <div className="row rowscroll">
               {dataFuture.map(function(el) {
                 return (
-                  <div className="col-2">
+                  <div className="col-2 col-sm-3 col-xs-4">
                     <FutureCard img={el.img} city={el.city} />
                   </div>
                 );

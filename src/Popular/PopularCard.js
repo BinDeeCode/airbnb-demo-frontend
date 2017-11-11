@@ -26,14 +26,17 @@ const Price = styled.div`
   line-height: 23px;
   margin-top: 4px;
 `;
+const Wrapper = styled.div`width: 220px;`;
 
 export default function(props) {
   return (
-    <a href="#">
-      <ImgCard src={props.img} />
-      <CookName>{props.cook.toUpperCase()}</CookName>
-      <Name>{props.name}</Name>
-      <Price>About ${props.price} per person</Price>
-    </a>
+    <Wrapper>
+      <a href="#">
+        <ImgCard src={props.img} />
+        <CookName>{props.cook.toUpperCase()}</CookName>
+        <Name>{props.name}</Name>
+        <Price>About ${props.price} per person</Price>
+      </a>
+    </Wrapper>
   );
 }

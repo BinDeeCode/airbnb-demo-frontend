@@ -39,7 +39,7 @@ export default function() {
   return (
     <Header>
       <Container className="container">
-        <Row className="row">
+        <Row className="rows">
           <div className="col-1 col-sm-1 col-xs-3">
             <Logo href="#">
               <Img src={logo} />

@@ -43,22 +43,21 @@ export default function() {
       <div className="row">
         <div className="col-12">
           <TitleSection name="Popular reservations around the world" />
-
-          <div className="container">
-            <div className="row">
-              {dataPopularCard.map(function(el) {
-                return (
-                  <div className="col-3">
-                    <PopularCard
-                      img={el.img}
-                      cook={el.cook}
-                      name={el.name}
-                      price={el.price}
-                    />
-                  </div>
-                );
-              })}
-            </div>
+        </div>
+        <div className="container">
+          <div className="row rowscroll">
+            {dataPopularCard.map(function(el) {
+              return (
+                <div className="col-3 col-sm-4 col-xs-6">
+                  <PopularCard
+                    img={el.img}
+                    cook={el.cook}
+                    name={el.name}
+                    price={el.price}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

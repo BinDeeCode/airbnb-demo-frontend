@@ -32,3 +32,28 @@
   overflow: auto;
   flex-wrap: nowrap;
 }
+
+.image-card-1 {
+  background-image: url(./cardback_1.png);
+}
+
+@media (max-width: 576px) {
+  .card > img {
+    float: none;
+    width: 200px;
+    height: 78px;
+  }
+  .card {
+    height: 125px;
+    width: 200px;
+  }
+  .cardText {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .image-card-1 {
+    background-image: url(./mobCard1.png);
+  }
+}

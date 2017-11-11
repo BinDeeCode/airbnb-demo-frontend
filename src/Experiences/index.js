@@ -12,7 +12,6 @@ import TitleSection from "../TitleSection.js";
 
 import arrowAside from "../arrowAside.svg";
 import { Wrapper } from "../Footer/styled";
-import { Scroll } from "../Scroll";
 
 const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
@@ -53,26 +52,22 @@ const dataCard = [
 export default function() {
   return (
     <div className="container">
-      <div className="row">
+      <div className="rows">
         <TitleSection name="Experiences" links="#" />
-        <Scroll>
-          <div className="container">
-            <div className="row rowscroll">
-              {dataCard.map(function(el) {
-                return (
-                  <div className="col-3 col-sm-4">
-                    <Cards
-                      img={el.img}
-                      price={el.price}
-                      name={el.name}
-                      reviews={el.reviews}
-                    />
-                  </div>
-                );
-              })}
+      </div>
+      <div className="rows rowscroll">
+        {dataCard.map(function(el) {
+          return (
+            <div className="col-3 col-sm-4 col-xs-6">
+              <Cards
+                img={el.img}
+                price={el.price}
+                name={el.name}
+                reviews={el.reviews}
+              />
             </div>
-          </div>
-        </Scroll>
+          );
+        })}
       </div>
     </div>
   );

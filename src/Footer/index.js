@@ -17,6 +17,7 @@ import {
   FlexImg,
   H3,
   Wrapper,
+  Privacy,
   ContainerFooter,
   InputList
 } from "./styled.js";
@@ -25,8 +26,8 @@ export default function() {
   return (
     <Wrapper>
       <ContainerFooter className="container">
-        <div className="row">
-          <div className="col-3">
+        <div className="rows">
+          <div className="col-3 col-sm-3 xs-hidden">
             <InputList>
               <option>English</option>
               <option>Русский</option>
@@ -40,8 +41,24 @@ export default function() {
               <option>Юани</option>
             </InputList>
           </div>
-          <div className="col-1" />
-          <div className="col-3">
+          <div className="col-xs-12 sm-hidden lg-hidden">
+            <InputList>
+              <option>English</option>
+              <option>Русский</option>
+              <option>Украинский</option>
+              <option>China</option>
+            </InputList>
+          </div>
+          <div className="col-xs-12 sm-hidden lg-hidden">
+            <InputList>
+              <option>United States dollar</option>
+              <option>Рубли</option>
+              <option>Гривны</option>
+              <option>Юани</option>
+            </InputList>
+          </div>
+          <div className="col-1 col-sm-1 xs-hidden" />
+          <div className="col-3 col-sm-3 xs-hidden">
             <div>
               <H3>Airbnb</H3>
               <div>
@@ -58,7 +75,7 @@ export default function() {
             </div>
           </div>
 
-          <div className="col-3">
+          <div className="col-3 col-sm-3 xs-hidden">
             <div>
               <H3>Discover</H3>
               <div>
@@ -75,7 +92,7 @@ export default function() {
             </div>
           </div>
 
-          <div className="col-2">
+          <div className="col-2 col-sm-2 xs-hidden">
             <div>
               <H3>Discover</H3>
               <div>
@@ -95,22 +112,22 @@ export default function() {
       </ContainerFooter>
 
       <div className="container">
-        <div className="row">
-          <FlexDiv className="col-8">
+        <div className="rows">
+          <FlexDiv className="col-8 col-sm-3 col-xs-12">
             <a href="#">
               <ImgLogo src={logo} />
             </a>
             <DivLogoText>© Airbnb Inc.</DivLogoText>
           </FlexDiv>
-          <FlexDiv className="col-4">
+          <FlexDiv className="col-4 col-sm-9 col-xs-12">
             <a href="#">
-              <DivLogoText>Terms</DivLogoText>
+              <Privacy>Terms</Privacy>
             </a>
             <a href="#">
-              <DivLogoText>Privacy</DivLogoText>
+              <Privacy>Privacy</Privacy>
             </a>
             <a href="#">
-              <DivLogoText>Site map</DivLogoText>
+              <Privacy>Site map</Privacy>
             </a>
             <FlexImg>
               <a href="#">

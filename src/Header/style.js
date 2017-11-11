@@ -8,11 +8,15 @@ export const Header = styled.header`
   background: #ffffff;
   box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
   height: 80px;
+  @media (max-width: 576px) {
+    width: calc(100% - 20px);
+  }
 `;
 
 export const Input = styled.input`
   height: 48px;
   border: 1px solid rgba(72, 72, 72, 0.2);
+
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   border-radius: 4px;
@@ -33,7 +37,7 @@ export const Input = styled.input`
     width: 432px;
   }
   @media (max-width: 576px) {
-    width: 100%;
+    width: calc(100% - 20px);
   }
 `;
 

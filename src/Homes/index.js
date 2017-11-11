@@ -36,25 +36,24 @@ export default function() {
   return (
     <div calssName="container">
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 col-sm-12 col-xs-12">
           <TitleSection name="Homes" links="#" />
-
-          <div className="container">
-            <div className="row">
-              {dataHomesCard.map(function(el) {
-                return (
-                  <div className="col-4">
-                    <HomesCard
-                      img={el.img}
-                      price={el.price}
-                      name={el.name}
-                      entre={el.entre}
-                      supershot={el.supershot}
-                    />
-                  </div>
-                );
-              })}
-            </div>
+        </div>
+        <div className="container">
+          <div className="row rowscroll">
+            {dataHomesCard.map(function(el) {
+              return (
+                <div className="col-4 col-sm-5">
+                  <HomesCard
+                    img={el.img}
+                    price={el.price}
+                    name={el.name}
+                    entre={el.entre}
+                    supershot={el.supershot}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

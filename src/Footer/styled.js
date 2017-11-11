@@ -11,6 +11,9 @@ export const ContainerFooter = styled.div`
   margin-top: 48px;
   border-bottom: solid 0.5px rgba(72, 72, 72, 0.3);
   padding-bottom: 48px;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 export const InputList = styled.select`
@@ -22,9 +25,11 @@ export const InputList = styled.select`
   font-size: 18px;
   border-radius: 4px;
   margin-bottom: 16px;
+
   background-image: url(${arrowBot});
+
   background-repeat: no-repeat;
-  background-position: 235px center;
+  background-position: calc(100% - 15px) center;
   padding: 10px;
   box-decoration-break: none;
   color: #383838;
@@ -34,6 +39,9 @@ export const InputList = styled.select`
   &:focus {
     border: 1px solid #00797e;
     outline: none;
+  }
+  @media (max-width: 576px) {
+    width: calc(100% - 60px);
   }
 `;
 
@@ -59,6 +67,10 @@ export const LinksText = styled.a`
   &:hover {
     text-decoration: underline;
   }
+
+  @media (min-width: 576px) and (max-width: 1000px) {
+    font-size: 12px;
+  }
 `;
 
 export const ImgLogo = styled.img``;
@@ -67,13 +79,17 @@ export const FlexDiv = styled.div`
   display: flex;
   height: 88px;
   align-items: center;
+  justify-content: flex-end;
+  @media (max-width: 576px) {
+    justify-content: flex-start;
+    height: 60px;
+  }
 `;
 
 export const FlexImg = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 48%;
+  justify-content: flex-start;
 `;
 
 export const DivLogoText = styled.div`
@@ -86,6 +102,19 @@ export const DivLogoText = styled.div`
 `;
 
 export const ImgSoc = styled.img`
-  margin-right: 12px;
+  margin-left: 12px;
   padding: 4px;
+`;
+
+export const Privacy = styled.div`
+  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #383838;
+  padding-left: 16px;
+  @media (max-width: 576px) {
+    padding-right: 16px;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
 `;

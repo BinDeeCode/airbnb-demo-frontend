@@ -46,21 +46,32 @@ const InfSupershot = styled.div`
   padding-left: 8px;
 `;
 
+const Wrapper = styled.div`
+  width: 304px;
+
+  @media (max-width: 576px) {
+    width: 250px;
+    padding-right: 10px;
+  }
+`;
+
 export default function(props) {
   return (
     <a href="#">
-      <div>
-        <HomesImg src={props.img} alt="" />
-      </div>
-      <TitleHomesCard>
-        <HomesPrice>${props.price}</HomesPrice>
-        <HomesName>{props.name}</HomesName>
-      </TitleHomesCard>
-      <InfTitle>{props.entre}</InfTitle>
-      <div>
-        <ImgStar src={star} />
-        <InfSupershot>{props.supershot}</InfSupershot>
-      </div>
+      <Wrapper>
+        <div>
+          <HomesImg src={props.img} alt="" />
+        </div>
+        <TitleHomesCard>
+          <HomesPrice>${props.price}</HomesPrice>
+          <HomesName>{props.name}</HomesName>
+        </TitleHomesCard>
+        <InfTitle>{props.entre}</InfTitle>
+        <div>
+          <ImgStar src={star} />
+          <InfSupershot>{props.supershot}</InfSupershot>
+        </div>
+      </Wrapper>
     </a>
   );
 }
