@@ -125,6 +125,11 @@ body {
     overflow-x: scroll;
     width: 100%;
   }
+  .rownoscroll {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
   .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -218,6 +223,11 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    width: 100%;
+  }
+  .rownoscroll {
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
   }
   .container {

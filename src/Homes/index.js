@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TitleSection from "../TitleSection";
 import "../gridstyle.css";
-import HomesCard from "./HomesCard.js";
+import Card from "./Card";
 import imgCard2 from "./homesCard2.png";
 import imgCard1 from "./homesCard1.png";
 import imgCard3 from "./homesCard3.png";
@@ -50,33 +50,30 @@ const Aside = styled.div`
 
 export default function() {
   return (
-    <div calssName="container">
+    <div className="container">
       <div className="row">
-        <div className="col-12 col-sm-12 col-xs-12">
-          <TitleSection name="Homes" links="#" />
-        </div>
-        <div className="container">
-          <div className="row rowscroll">
-            {dataHomesCard.map(function(el) {
-              return (
-                <div className="col-4 col-sm-5">
-                  <HomesCard
-                    img={el.img}
-                    price={el.price}
-                    name={el.name}
-                    entre={el.entre}
-                    supershot={el.supershot}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          <div className="rows sm-hidden xs-hidden">
-            <a href="#">
-              <Aside />
-            </a>
-          </div>
-        </div>
+        <TitleSection name="Experiences" links="#" />
+      </div>
+
+      <div className="row rowscroll">
+        {dataHomesCard.map(function(el) {
+          return (
+            <div className="col-4 col-sm-5">
+              <Card
+                img={el.img}
+                price={el.price}
+                name={el.name}
+                entre={el.entre}
+                supershot={el.supershot}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <div className="row sm-hidden xs-hidden">
+        <a href="#">
+          <Aside />
+        </a>
       </div>
     </div>
   );

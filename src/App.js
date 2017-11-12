@@ -20,10 +20,12 @@ class App extends Component {
         <Experiences />
 
         <Homes />
-        {/* 
+
         <Popular />
+
         <Cityes />
-        <Footer /> */}
+
+        <Footer />
       </div>
     );
   }

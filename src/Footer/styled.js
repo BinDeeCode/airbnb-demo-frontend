@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
 `;
 
 export const ContainerFooter = styled.div`
-  margin-top: 48px;
+  margin-top: 16px;
   border-bottom: solid 0.5px rgba(72, 72, 72, 0.3);
-  padding-bottom: 48px;
+  padding: 0px;
   @media (max-width: 576px) {
     width: 100%;
   }
@@ -40,8 +40,12 @@ export const InputList = styled.select`
     border: 1px solid #00797e;
     outline: none;
   }
+  @media (min-width: 576px) and (max-width: 992px) {
+    font-size: 15px;
+  }
   @media (max-width: 576px) {
-    width: calc(100% - 60px);
+    width: 100%;
+    font-size: 12px;
   }
 `;
 
@@ -68,12 +72,16 @@ export const LinksText = styled.a`
     text-decoration: underline;
   }
 
-  @media (min-width: 576px) and (max-width: 1000px) {
+  @media (min-width: 576px) and (max-width: 992px) {
     font-size: 12px;
   }
 `;
 
 export const ImgLogo = styled.img``;
+export const RowWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
 
 export const FlexDiv = styled.div`
   display: flex;
@@ -99,6 +107,12 @@ export const DivLogoText = styled.div`
   color: #383838;
   margin-left: 16px;
   width: 100%;
+  @media (min-width: 576px) and (max-width: 992px) {
+    font-size: 13px;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
 `;
 
 export const ImgSoc = styled.img`
@@ -112,9 +126,14 @@ export const Privacy = styled.div`
   text-decoration: none;
   color: #383838;
   padding-left: 16px;
+  @media (min-width: 576px) and (max-width: 992px) {
+    font-size: 13px;
+  }
   @media (max-width: 576px) {
     padding-right: 16px;
     padding-left: 0px;
     margin-top: 0px;
+
+    font-size: 12px;
   }
 `;

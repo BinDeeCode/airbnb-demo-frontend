@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import "../gridstyle.css";
-import FutureCard from "./FutureCard.js";
+import Card from "./Card";
 
 import arrowAside from "../arrowAside.svg";
 
-import TitleSectionNoAllSee from "../TitleSectionNoAllSee.js";
+import TitleSectionNoAllSee from "../TitleSectionNoAllSee";
 
-import img1 from "./img/img1.png";
-import img2 from "./img/img2.png";
-import img3 from "./img/img3.png";
-import img4 from "./img/img4.png";
-import img5 from "./img/img5.png";
-import img6 from "./img/img6.png";
+import img1 from "./img1.png";
+import img2 from "./img2.png";
+import img3 from "./img3.png";
+import img4 from "./img4.png";
+import img5 from "./img5.png";
+import img6 from "./img6.png";
 
 const dataFuture = [
   {
@@ -47,7 +47,7 @@ const Aside = styled.div`
   width: 40px;
   border-radius: 40px;
   bottom: 121px;
-  left: calc(89% + 45px);
+  left: calc(89% + 68px);
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;
@@ -59,28 +59,24 @@ const Aside = styled.div`
 
 export default function() {
   return (
-    <div calssName="container">
+    <div className="container">
       <div className="row">
-        <a href="#" />
-        <div className="col-12 col-sm-12 col-xs-12">
-          <TitleSectionNoAllSee name="Featured destinations" links="#" />
-
-          <div className="container">
-            <div className="row rowscroll">
-              {dataFuture.map(function(el) {
-                return (
-                  <div className="col-2 col-sm-3 col-xs-4">
-                    <FutureCard img={el.img} city={el.city} />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
+        <TitleSectionNoAllSee name="Featured destinations" />
       </div>
+
+      <div className="row rowscroll">
+        {dataFuture.map(function(el) {
+          return (
+            <div className="col-2 col-sm-3 col-xs-4">
+              <Card img={el.img} city={el.city} />
+            </div>
+          );
+        })}
+      </div>
+
       <div className="row">
         <a href="#" className="sm-hidden xs-hidden">
-          <Aside> </Aside>
+          <Aside />
         </a>
       </div>
     </div>

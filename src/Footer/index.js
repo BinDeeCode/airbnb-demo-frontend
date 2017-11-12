@@ -6,7 +6,7 @@ import inst from "./instagram.svg";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 
-import { dataHosting, dataAirbnb, dataDiscover } from "./data.js";
+import { dataHosting, dataAirbnb, dataDiscover } from "./data";
 import {
   LinksText,
   DivLogoText,
@@ -17,17 +17,18 @@ import {
   FlexImg,
   H3,
   Wrapper,
+  RowWrapper,
   Privacy,
   ContainerFooter,
   InputList
-} from "./styled.js";
+} from "./styled";
 
 export default function() {
   return (
     <Wrapper>
       <ContainerFooter className="container">
-        <div className="rows">
-          <div className="col-3 col-sm-3 xs-hidden">
+        <div className="row rownoscroll">
+          <div className="col-3 col-sm-4 xs-hidden">
             <InputList>
               <option>English</option>
               <option>Русский</option>
@@ -41,7 +42,7 @@ export default function() {
               <option>Юани</option>
             </InputList>
           </div>
-          <div className="col-xs-12 sm-hidden lg-hidden">
+          <div className="col-xs-6 sm-hidden lg-hidden">
             <InputList>
               <option>English</option>
               <option>Русский</option>
@@ -49,7 +50,7 @@ export default function() {
               <option>China</option>
             </InputList>
           </div>
-          <div className="col-xs-12 sm-hidden lg-hidden">
+          <div className="col-xs-6 sm-hidden lg-hidden">
             <InputList>
               <option>United States dollar</option>
               <option>Рубли</option>
@@ -57,7 +58,7 @@ export default function() {
               <option>Юани</option>
             </InputList>
           </div>
-          <div className="col-1 col-sm-1 xs-hidden" />
+          <div className="col-1 sm-hidden xs-hidden" />
           <div className="col-3 col-sm-3 xs-hidden">
             <div>
               <H3>Airbnb</H3>
@@ -112,7 +113,7 @@ export default function() {
       </ContainerFooter>
 
       <div className="container">
-        <div className="rows">
+        <RowWrapper className="row">
           <FlexDiv className="col-8 col-sm-3 col-xs-12">
             <a href="#">
               <ImgLogo src={logo} />
@@ -141,7 +142,7 @@ export default function() {
               </a>
             </FlexImg>
           </FlexDiv>
-        </div>
+        </RowWrapper>
       </div>
     </Wrapper>
   );

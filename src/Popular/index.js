@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TitleSection from "../TitleSection";
 import "../gridstyle.css";
-import PopularCard from "./PopularCard.js";
+import Card from "./Card";
 import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
@@ -55,32 +55,29 @@ const Aside = styled.div`
 
 export default function() {
   return (
-    <div calssName="container">
+    <div className="container">
       <div className="row">
-        <div className="col-12">
-          <TitleSection name="Popular reservations around the world" />
-        </div>
-        <div className="container">
-          <div className="row rowscroll">
-            {dataPopularCard.map(function(el) {
-              return (
-                <div className="col-3 col-sm-4 col-xs-6">
-                  <PopularCard
-                    img={el.img}
-                    cook={el.cook}
-                    name={el.name}
-                    price={el.price}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          <div className="row">
-            <a href="#" className="sm-hidden xs-hidden">
-              <Aside />
-            </a>
-          </div>
-        </div>
+        <TitleSection name="Popular reservations around the world" links="#" />
+      </div>
+
+      <div className="row rowscroll">
+        {dataPopularCard.map(function(el) {
+          return (
+            <div className="col-3 col-sm-4 col-xs-6">
+              <Card
+                img={el.img}
+                cook={el.cook}
+                name={el.name}
+                price={el.price}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <div className="row">
+        <a href="#" className="sm-hidden xs-hidden">
+          <Aside />
+        </a>
       </div>
     </div>
   );
