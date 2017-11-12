@@ -3,7 +3,7 @@ import React from "react";
 import {
   Menu,
   Row,
-  Links,
+  Link,
   Logo,
   Wrapper,
   Header,
@@ -32,18 +32,18 @@ export default function() {
           <div className="col-2 sm-hidden xs-hidden" />
           <div className="col-4 sm-hidden xs-hidden">
             <Menu>
-              <Links href="#">
+              <Link href="#">
                 <p> Become a host </p>
-              </Links>
-              <Links href="#">
+              </Link>
+              <Link href="#">
                 <p> Help </p>
-              </Links>
-              <Links href="#">
+              </Link>
+              <Link href="#">
                 <p> Sign Up </p>
-              </Links>
-              <Links href="#">
+              </Link>
+              <Link href="#">
                 <p> Log In </p>
-              </Links>
+              </Link>
             </Menu>
           </div>
         </Row>

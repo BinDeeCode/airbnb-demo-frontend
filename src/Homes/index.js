@@ -31,7 +31,7 @@ const dataHomesCard = [
   }
 ];
 
-const Aside = styled.div`
+const Button = styled.div`
   position: absolute;
   height: 40px;
   width: 40px;
@@ -69,7 +69,7 @@ export default function() {
       </div>
       <div className="row sm-hidden xs-hidden">
         <a href="#">
-          <Aside />
+          <Button />
         </a>
       </div>
     </div>

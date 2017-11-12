@@ -9,34 +9,34 @@ import img4 from "./img4.png";
 
 import arrowAside from "../arrowAside.svg";
 
-const dataPopularCard = [
+const cards = [
   {
     cook: "Speakeasy",
     name: "Chumley’s",
-    price: "60",
+    price: 60,
     img: img1
   },
   {
     cook: "Korean gastropub",
     name: "Hanjan",
-    price: "50",
+    price: 50,
     img: img2
   },
   {
     cook: "German american",
     name: "Prime Meats",
-    price: "55",
+    price: 55,
     img: img3
   },
   {
     cook: "Fine seafood",
     name: "Seaprice",
-    price: "70",
+    price: 70,
     img: img4
   }
 ];
 
-const Aside = styled.div`
+const Button = styled.div`
   position: absolute;
   height: 40px;
   width: 40px;
@@ -60,7 +60,7 @@ export default function() {
       </div>
 
       <div className="row rowscroll">
-        {dataPopularCard.map(function(el) {
+        {cards.map(function(el) {
           return (
             <div className="col-3 col-sm-4 col-xs-6">
               <Card
@@ -75,7 +75,7 @@ export default function() {
       </div>
       <div className="row">
         <a href="#" className="sm-hidden xs-hidden">
-          <Aside />
+          <Button />
         </a>
       </div>
     </div>

@@ -6,25 +6,25 @@ import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 
 import {
-  Text,
+  Link,
   Inc,
   ImgSoc,
   Block,
-  Div,
+  LinkWrapper,
   Logo,
   FlexImg,
   Title,
   Wrapper,
   RowWrapper,
   Privacy,
-  ContainerFooter,
+  Container,
   Select
 } from "./styled";
 
 export default function() {
   return (
     <Wrapper>
-      <ContainerFooter className="container">
+      <Container className="container">
         <div className="row rownoscroll">
           <div className="col-3 col-sm-4 xs-hidden">
             <Select>
@@ -61,24 +61,24 @@ export default function() {
             <div>
               <Title>Airbnb</Title>
               <div>
-                <Div>
-                  <Text href="#">About us</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Careers</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Press</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Policies</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Help</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Diversity & Belonging</Text>
-                </Div>
+                <LinkWrapper>
+                  <Link href="#">About us</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Careers</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Press</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Policies</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Help</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Diversity & Belonging</Link>
+                </LinkWrapper>
               </div>
             </div>
           </div>
@@ -87,27 +87,27 @@ export default function() {
             <div>
               <Title>Discover</Title>
               <div>
-                <Div>
-                  <Text href="#">Trust & Safety</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Travel Credit</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Gift Cards</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Airbnb Citizen</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Business Travel</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Guidebooks</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Airbnbmag</Text>
-                </Div>
+                <LinkWrapper>
+                  <Link href="#">Trust & Safety</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Travel Credit</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Gift Cards</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Airbnb Citizen</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Business Travel</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Guidebooks</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Airbnbmag</Link>
+                </LinkWrapper>
               </div>
             </div>
           </div>
@@ -116,23 +116,23 @@ export default function() {
             <div>
               <Title>Hosting</Title>
               <div>
-                <Div>
-                  <Text href="#">Why Host</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Hospitality</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Responsible Hosting</Text>
-                </Div>
-                <Div>
-                  <Text href="#">Community Center</Text>
-                </Div>
+                <LinkWrapper>
+                  <Link href="#">Why Host</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Hospitality</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Responsible Hosting</Link>
+                </LinkWrapper>
+                <LinkWrapper>
+                  <Link href="#">Community Center</Link>
+                </LinkWrapper>
               </div>
             </div>
           </div>
         </div>
-      </ContainerFooter>
+      </Container>
 
       <div className="container">
         <RowWrapper className="row">

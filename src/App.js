@@ -8,7 +8,7 @@ import Explore from "./Explore";
 import Experiences from "./Experiences";
 import Homes from "./Homes";
 import Popular from "./Popular";
-import Cityes from "./Cityes";
+import Cities from "./Cities";
 import Footer from "./Footer";
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
 
         <Popular />
 
-        <Cityes />
+        <Cities />
 
         <Footer />
       </div>

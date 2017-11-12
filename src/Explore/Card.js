@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import "../gridstyle.css";
 
-const Card = styled.div`
+const Card = styled.a`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -45,13 +45,11 @@ const Img = styled.img`
 export default function(props) {
   return (
     <div className="col-4 col-sm-5 col-xs-6">
-      <a href="#">
-        <Card>
-          <Img className="xs-hidden" src={props.img} alt="" />
-          <Img className="lg-hidden sm-hidden" src={props.imgmob} alt="" />
-          <P>{props.name}</P>
-        </Card>{" "}
-      </a>
+      <Card href="#">
+        <Img className="xs-hidden" src={props.img} alt="" />
+        <Img className="lg-hidden sm-hidden" src={props.imgmob} alt="" />
+        <P>{props.name}</P>
+      </Card>
     </div>
   );
 }

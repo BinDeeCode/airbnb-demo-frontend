@@ -13,7 +13,7 @@ import img4 from "./img4.png";
 import img5 from "./img5.png";
 import img6 from "./img6.png";
 
-const dataFuture = [
+const cities = [
   {
     city: "Chumley’s",
     img: img1
@@ -40,13 +40,13 @@ const dataFuture = [
   }
 ];
 
-const Aside = styled.div`
+const Button = styled.div`
   position: absolute;
   height: 40px;
   width: 40px;
   border-radius: 40px;
   bottom: 121px;
-  left: calc(89% + 68px);
+  right: 3px;
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ export default function() {
       </div>
 
       <div className="row rowscroll">
-        {dataFuture.map(function(el) {
+        {cities.map(function(el) {
           return (
             <div className="col-2 col-sm-3 col-xs-4">
               <Card img={el.img} city={el.city} />
@@ -75,7 +75,7 @@ export default function() {
 
       <div className="row">
         <a href="#" className="sm-hidden xs-hidden">
-          <Aside />
+          <Button />
         </a>
       </div>
     </div>

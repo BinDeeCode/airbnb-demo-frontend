@@ -38,7 +38,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Links = styled.a`
+export const Link = styled.a`
   text-decoration: none;
   line-height: 24px;
   font-size: 14px;

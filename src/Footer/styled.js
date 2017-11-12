@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import arrowBot from "./arrowBot.svg";
+import arrow from "./arrow.svg";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   border-top: solid 0.5px rgba(72, 72, 72, 0.3);
 `;
 
-export const ContainerFooter = styled.div`
+export const Container = styled.div`
   margin-top: 16px;
   border-bottom: solid 0.5px rgba(72, 72, 72, 0.3);
   padding: 0px;
@@ -25,7 +25,7 @@ export const Select = styled.select`
   font-size: 18px;
   border-radius: 4px;
   margin-bottom: 16px;
-  background-image: url(${arrowBot});
+  background-image: url(${arrow});
   background-repeat: no-repeat;
   background-position: calc(100% - 15px) center;
   padding: 10px;
@@ -58,12 +58,12 @@ export const Title = styled.div`
   color: #3838383;
 `;
 
-export const Div = styled.nav`
+export const LinkWrapper = styled.nav`
   margin-top: 0px;
   padding-bottom: 8px;
 `;
 
-export const Text = styled.a`
+export const Link = styled.a`
   font-size: 15px;
   font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
   color: #636363;

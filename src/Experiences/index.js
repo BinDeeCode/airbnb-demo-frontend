@@ -9,15 +9,6 @@ import arrow from "./arrowShape.svg";
 import TitleSection from "../TitleSection";
 import arrowAside from "../arrowAside.svg";
 
-const H2Title = styled.h2`
-  font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
-  margin-top: 50px;
-  font-siz: e 32px;
-  line-height: 34px;
-  color: #383838;
-  padding-bottom: 2px;
-`;
-
 const cards = [
   {
     price: 29,
@@ -45,14 +36,14 @@ const cards = [
   }
 ];
 
-export const Aside = styled.div`
+export const Button = styled.div`
   position: absolute;
 
   height: 40px;
   width: 40px;
   border-radius: 40px;
-  bottom: 213px;
-  left: calc(92% + 40px);
+  top: 145px;
+  right: 5px;
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;
@@ -82,7 +73,7 @@ export default function() {
           );
         })}
         <a href="#" className="sm-hidden xs-hidden">
-          <Aside />
+          <Button />
         </a>
       </div>
     </div>
