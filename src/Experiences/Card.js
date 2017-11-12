@@ -5,8 +5,10 @@ import star from "../star.svg";
 const Cards = styled.div`
   margin: 0;
   padding: 0;
-  height: 420px;
-  width: 230px;
+  width: 219px;
+  @media (max-width: 576px) {
+    width: 180px;
+  }
 `;
 const Img = styled.img`
   padding: 0;
@@ -41,20 +43,18 @@ const Reviews = styled.span`
 
 export default function(props) {
   return (
-    <nav>
-      <a href="#">
-        <Cards>
-          <Img src={props.img} />
-          <Title>
-            <Price>${props.price}</Price>
-            <Name>{props.name}</Name>
-          </Title>
-          <Raiting>
-            <img src={star} />
-            <Reviews>{props.reviews} reviews</Reviews>
-          </Raiting>
-        </Cards>
-      </a>
-    </nav>
+    <a href="#">
+      <Cards>
+        <Img src={props.img} />
+        <Title>
+          <Price>${props.price}</Price>
+          <Name>{props.name}</Name>
+        </Title>
+        <Raiting>
+          <img src={star} />
+          <Reviews>{props.reviews} reviews</Reviews>
+        </Raiting>
+      </Cards>
+    </a>
   );
 }

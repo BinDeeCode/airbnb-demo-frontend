@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import "../gridstyle.css";
 import arrowBot from "./arrowBot.svg";
+
 export const Wrapper = styled.div`
   width: 100%;
   margin-top: 64px;
@@ -16,7 +16,7 @@ export const ContainerFooter = styled.div`
   }
 `;
 
-export const InputList = styled.select`
+export const Select = styled.select`
   height: 48px;
   width: 100%;
   border: 1px solid rgba(72, 72, 72, 0.2);
@@ -25,17 +25,17 @@ export const InputList = styled.select`
   font-size: 18px;
   border-radius: 4px;
   margin-bottom: 16px;
-
   background-image: url(${arrowBot});
-
   background-repeat: no-repeat;
   background-position: calc(100% - 15px) center;
   padding: 10px;
   box-decoration-break: none;
   color: #383838;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-progress-appearance: none;
+  appearance: none;
+  :-ms-expand {
+    display: none;
+  }
+
   &:focus {
     border: 1px solid #00797e;
     outline: none;
@@ -49,7 +49,7 @@ export const InputList = styled.select`
   }
 `;
 
-export const H3 = styled.div`
+export const Title = styled.div`
   padding: 0;
   padding-bottom: 16px;
   font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
@@ -58,12 +58,12 @@ export const H3 = styled.div`
   color: #3838383;
 `;
 
-export const LinksDiv = styled.nav`
+export const Div = styled.nav`
   margin-top: 0px;
   padding-bottom: 8px;
 `;
 
-export const LinksText = styled.a`
+export const Text = styled.a`
   font-size: 15px;
   font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
   color: #636363;
@@ -77,13 +77,12 @@ export const LinksText = styled.a`
   }
 `;
 
-export const ImgLogo = styled.img``;
 export const RowWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const FlexDiv = styled.div`
+export const Block = styled.div`
   display: flex;
   height: 88px;
   align-items: center;
@@ -100,7 +99,7 @@ export const FlexImg = styled.div`
   justify-content: flex-start;
 `;
 
-export const DivLogoText = styled.div`
+export const Inc = styled.div`
   font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
   font-size: 15px;
   text-decoration: none;

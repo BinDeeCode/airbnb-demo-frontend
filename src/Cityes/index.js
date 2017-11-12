@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../gridstyle.css";
 import Card from "./Card";
 
 import arrowAside from "../arrowAside.svg";

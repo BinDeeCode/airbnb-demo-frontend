@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import TitleSection from "../TitleSection";
-import "../gridstyle.css";
 import Card from "./Card";
 import img1 from "./img1.png";
 import img2 from "./img2.png";

@@ -1,26 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import "../gridstyle.css";
 import logo from "./logo.svg";
 import inst from "./instagram.svg";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 
-import { dataHosting, dataAirbnb, dataDiscover } from "./data";
 import {
-  LinksText,
-  DivLogoText,
+  Text,
+  Inc,
   ImgSoc,
-  FlexDiv,
-  LinksDiv,
-  ImgLogo,
+  Block,
+  Div,
+  Logo,
   FlexImg,
-  H3,
+  Title,
   Wrapper,
   RowWrapper,
   Privacy,
   ContainerFooter,
-  InputList
+  Select
 } from "./styled";
 
 export default function() {
@@ -29,83 +27,107 @@ export default function() {
       <ContainerFooter className="container">
         <div className="row rownoscroll">
           <div className="col-3 col-sm-4 xs-hidden">
-            <InputList>
+            <Select>
               <option>English</option>
               <option>Русский</option>
               <option>Украинский</option>
               <option>China</option>
-            </InputList>
-            <InputList>
+            </Select>
+            <Select>
               <option>United States dollar</option>
               <option>Рубли</option>
               <option>Гривны</option>
               <option>Юани</option>
-            </InputList>
+            </Select>
           </div>
           <div className="col-xs-6 sm-hidden lg-hidden">
-            <InputList>
+            <Select>
               <option>English</option>
               <option>Русский</option>
               <option>Украинский</option>
               <option>China</option>
-            </InputList>
+            </Select>
           </div>
           <div className="col-xs-6 sm-hidden lg-hidden">
-            <InputList>
+            <Select>
               <option>United States dollar</option>
               <option>Рубли</option>
               <option>Гривны</option>
               <option>Юани</option>
-            </InputList>
+            </Select>
           </div>
           <div className="col-1 sm-hidden xs-hidden" />
           <div className="col-3 col-sm-3 xs-hidden">
             <div>
-              <H3>Airbnb</H3>
+              <Title>Airbnb</Title>
               <div>
-                {dataAirbnb.map(function(el) {
-                  return (
-                    <LinksDiv>
-                      <LinksText className="LinksTextCost" href={el.links}>
-                        {el.text}
-                      </LinksText>
-                    </LinksDiv>
-                  );
-                })}
+                <Div>
+                  <Text href="#">About us</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Careers</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Press</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Policies</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Help</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Diversity & Belonging</Text>
+                </Div>
               </div>
             </div>
           </div>
 
           <div className="col-3 col-sm-3 xs-hidden">
             <div>
-              <H3>Discover</H3>
+              <Title>Discover</Title>
               <div>
-                {dataDiscover.map(function(el) {
-                  return (
-                    <LinksDiv>
-                      <LinksText className="LinksTextCost" href={el.links}>
-                        {el.text}
-                      </LinksText>
-                    </LinksDiv>
-                  );
-                })}
+                <Div>
+                  <Text href="#">Trust & Safety</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Travel Credit</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Gift Cards</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Airbnb Citizen</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Business Travel</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Guidebooks</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Airbnbmag</Text>
+                </Div>
               </div>
             </div>
           </div>
 
           <div className="col-2 col-sm-2 xs-hidden">
             <div>
-              <H3>Discover</H3>
+              <Title>Hosting</Title>
               <div>
-                {dataHosting.map(function(el) {
-                  return (
-                    <LinksDiv>
-                      <LinksText className="LinksTextCost" href={el.links}>
-                        {el.text}
-                      </LinksText>
-                    </LinksDiv>
-                  );
-                })}
+                <Div>
+                  <Text href="#">Why Host</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Hospitality</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Responsible Hosting</Text>
+                </Div>
+                <Div>
+                  <Text href="#">Community Center</Text>
+                </Div>
               </div>
             </div>
           </div>
@@ -114,13 +136,13 @@ export default function() {
 
       <div className="container">
         <RowWrapper className="row">
-          <FlexDiv className="col-8 col-sm-3 col-xs-12">
+          <Block className="col-8 col-sm-3 col-xs-12">
             <a href="#">
-              <ImgLogo src={logo} />
+              <img src={logo} />
             </a>
-            <DivLogoText>© Airbnb Inc.</DivLogoText>
-          </FlexDiv>
-          <FlexDiv className="col-4 col-sm-9 col-xs-12">
+            <Inc>© Airbnb Inc.</Inc>
+          </Block>
+          <Block className="col-4 col-sm-9 col-xs-12">
             <a href="#">
               <Privacy>Terms</Privacy>
             </a>
@@ -141,7 +163,7 @@ export default function() {
                 <img src={inst} alt="" />
               </a>
             </FlexImg>
-          </FlexDiv>
+          </Block>
         </RowWrapper>
       </div>
     </Wrapper>

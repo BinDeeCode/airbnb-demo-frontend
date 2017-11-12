@@ -47,7 +47,8 @@ export default function(props) {
     <div className="col-4 col-sm-5 col-xs-6">
       <a href="#">
         <Card>
-          <Img src={props.img} alt="" />
+          <Img className="xs-hidden" src={props.img} alt="" />
+          <Img className="lg-hidden sm-hidden" src={props.imgmob} alt="" />
           <P>{props.name}</P>
         </Card>{" "}
       </a>

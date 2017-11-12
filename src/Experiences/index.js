@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../gridstyle.css";
 import Cards from "./Card";
 import img1 from "./expcardbg.png";
 import img2 from "./cardBg1.png";
@@ -19,7 +18,7 @@ const H2Title = styled.h2`
   padding-bottom: 2px;
 `;
 
-const dataCard = [
+const cards = [
   {
     price: 29,
     name: "Forest therapy",
@@ -35,7 +34,7 @@ const dataCard = [
   {
     price: 72,
     name: "Table Mountain Summit",
-    reviews: "34",
+    reviews: 34,
     img: img2
   },
   {
@@ -52,8 +51,8 @@ export const Aside = styled.div`
   height: 40px;
   width: 40px;
   border-radius: 40px;
-  bottom: 230px;
-  left: calc(92% + 48px);
+  bottom: 213px;
+  left: calc(92% + 40px);
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;
@@ -70,7 +69,7 @@ export default function() {
         <TitleSection name="Experiences" links="#" />
       </div>
       <div className="row rowscroll">
-        {dataCard.map(function(el) {
+        {cards.map(function(el) {
           return (
             <div className="col-3 col-sm-4 col-xs-6">
               <Cards

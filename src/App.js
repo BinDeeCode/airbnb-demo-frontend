@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import styled from "styled-components";
+import "./gridstyle.css";
 
 import Header from "./Header";
 import Explore from "./Explore";

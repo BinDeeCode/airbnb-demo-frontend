@@ -1,5 +1,4 @@
 import React from "react";
-import "../gridstyle.css";
 
 import {
   Menu,
@@ -15,25 +14,6 @@ import {
 
 import logo from "./logo.svg";
 import arrow from "./arrow.svg";
-
-const data = [
-  {
-    item: "Become a host",
-    link: "#"
-  },
-  {
-    item: "Help",
-    link: "#"
-  },
-  {
-    item: "Sign Up",
-    link: "#"
-  },
-  {
-    item: "Log In",
-    link: "#"
-  }
-];
 
 export default function() {
   return (
@@ -52,13 +32,18 @@ export default function() {
           <div className="col-2 sm-hidden xs-hidden" />
           <div className="col-4 sm-hidden xs-hidden">
             <Menu>
-              {data.map(function(el) {
-                return (
-                  <Links href="#">
-                    <p> {el.item} </p>
-                  </Links>
-                );
-              })}
+              <Links href="#">
+                <p> Become a host </p>
+              </Links>
+              <Links href="#">
+                <p> Help </p>
+              </Links>
+              <Links href="#">
+                <p> Sign Up </p>
+              </Links>
+              <Links href="#">
+                <p> Log In </p>
+              </Links>
             </Menu>
           </div>
         </Row>

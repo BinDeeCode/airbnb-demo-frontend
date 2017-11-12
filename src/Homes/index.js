@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import TitleSection from "../TitleSection";
-import "../gridstyle.css";
 import Card from "./Card";
 import imgCard2 from "./homesCard2.png";
 import imgCard1 from "./homesCard1.png";
@@ -52,21 +51,19 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSection name="Experiences" links="#" />
+        <TitleSection name="Homes" links="#" />
       </div>
 
       <div className="row rowscroll">
         {dataHomesCard.map(function(el) {
           return (
-            <div className="col-4 col-sm-5">
-              <Card
-                img={el.img}
-                price={el.price}
-                name={el.name}
-                entre={el.entre}
-                supershot={el.supershot}
-              />
-            </div>
+            <Card
+              img={el.img}
+              price={el.price}
+              name={el.name}
+              entre={el.entre}
+              supershot={el.supershot}
+            />
           );
         })}
       </div>
