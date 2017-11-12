@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import "../gridstyle.css";
-import Cards from "./Card.js";
+import Cards from "./Card";
 import img1 from "./expcardbg.png";
 import img2 from "./cardBg1.png";
 import img3 from "./cardBg2.png";
 import img4 from "./cardBg3.png";
 import arrow from "./arrowShape.svg";
-import TitleSection from "../TitleSection.js";
+import TitleSection from "../TitleSection";
 import arrowAside from "../arrowAside.svg";
-import { Wrapper } from "../Footer/styled";
 
 const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;
@@ -53,8 +52,8 @@ export const Aside = styled.div`
   height: 40px;
   width: 40px;
   border-radius: 40px;
-  top: 35%;
-  left: calc(96% + 10px);
+  bottom: 230px;
+  left: calc(92% + 48px);
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;
@@ -67,10 +66,10 @@ export const Aside = styled.div`
 export default function() {
   return (
     <div className="container">
-      <div className="rows">
+      <div className="row">
         <TitleSection name="Experiences" links="#" />
       </div>
-      <div className="rows rowscroll">
+      <div className="row rowscroll">
         {dataCard.map(function(el) {
           return (
             <div className="col-3 col-sm-4 col-xs-6">

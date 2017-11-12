@@ -3,7 +3,7 @@ import "./App.css";
 import styled from "styled-components";
 
 import Header from "./Header";
-import ExploreAirbnb from "./ExploreAirbnb/ExploreAirbnb";
+import Explore from "./Explore";
 import Experiences from "./Experiences";
 import Homes from "./Homes";
 import Popular from "./Popular";
@@ -15,12 +15,15 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <ExploreAirbnb />
+        <Explore />
+
         <Experiences />
+
         <Homes />
+        {/* 
         <Popular />
         <Cityes />
-        <Footer />
+        <Footer /> */}
       </div>
     );
   }

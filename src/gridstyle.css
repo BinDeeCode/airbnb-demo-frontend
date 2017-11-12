@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Circular Air Book;
+  font-family: "Circular Air Book";
   src: url(./fonts/Circular_Air-Book.ttf);
 
-  font-family: Circular Air Bold;
+  font-family: "Circular Air Bold";
   src: url(./fonts/Circular_Air-Bold.ttf);
 
-  font-family: Circular Air Light;
+  font-family: "Circular Air Light";
   src: url(./fonts/Circular_Air-Light.ttf);
 }
 
@@ -17,24 +17,17 @@ body {
   margin: 0;
   padding: 0;
 }
-.rows {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  margin-left: -8px;
-  margin-right: -8px;
-}
+
 @media (min-width: 992px) {
   .lg-hidden {
     display: none;
   }
-
   .row {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     margin-left: -8px;
     margin-right: -8px;
+    position: relative;
   }
   .container {
     margin-left: auto;
@@ -122,19 +115,19 @@ body {
 
 /* ///// */
 
-@media (min-width: 576px) and (max-width: 1000px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .sm-hidden {
     display: none;
   }
   .rowscroll {
     display: flex;
-    overflow-y: scroll;
     flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100%;
   }
   .container {
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
   }
   .col-sm-1 {
     flex-basis: 8.3333%;
@@ -230,7 +223,6 @@ body {
   .container {
     padding-left: 30px;
     padding-right: 30px;
-    width: 100%;
   }
   .col-xs-1 {
     flex-basis: 8.3333%;

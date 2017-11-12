@@ -11,10 +11,10 @@ import {
   Input,
   Container,
   Img
-} from "./style.js";
+} from "./style";
 
 import logo from "./logo.svg";
-import arrow from "./arrowDown.svg";
+import arrow from "./arrow.svg";
 
 const data = [
   {
@@ -40,13 +40,13 @@ export default function() {
     <Header>
       <Container className="container">
         <Row className="rows">
-          <div className="col-1 col-sm-1 col-xs-3">
+          <div className="col-1 col-sm-1 col-xs-2">
             <Logo href="#">
               <Img src={logo} />
               <img className="lg-hidden" src={arrow} />
             </Logo>
           </div>
-          <div className="col-5 col-sm-7 col-xs-9">
+          <div className="col-5 col-sm-7 col-xs-10">
             <Input type="text" placeholder="Try “Miami”" />
           </div>
           <div className="col-2 sm-hidden xs-hidden" />
