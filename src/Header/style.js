@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-
 import search from "./search.svg";
+import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   width: 100%;
   background: #ffffff;
-  box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
   height: 80px;
   @media (max-width: 576px) {
     width: 100%;
@@ -38,7 +38,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Link = styled.a`
+export const Paragraph = styled.a`
   text-decoration: none;
   line-height: 24px;
   font-size: 14px;
@@ -72,4 +72,4 @@ export const Img = styled.img`
   margin-top: 3px;
 `;
 
-export const Logo = styled.a`display: flex;`;
+export const Logo = styled(Link)`display: flex;`;

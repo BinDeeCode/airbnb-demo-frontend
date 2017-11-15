@@ -6,7 +6,7 @@ import Experiences from "./Experiences";
 import Homes from "./Homes";
 import Popular from "./Popular";
 import Cities from "./Cities";
-import Footer from "../Footer";
+import Footer from "./Footer";
 
 export default function() {
   return (

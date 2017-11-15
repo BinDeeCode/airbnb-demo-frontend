@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
-const Card = styled.a`
+import { Link } from "react-router-dom";
+const Card = styled(Link)`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -23,7 +23,8 @@ const P = styled.p`
   font-size: 17px;
   color: #383838;
   margin-left: 24px;
-  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir", Arial, Helvetica, sans-serif;
+  font-weight: bold;
   @media (max-width: 576px) {
     margin: 0px;
     margin-left: 20px;
@@ -43,7 +44,7 @@ const Img = styled.img`
 export default function(props) {
   return (
     <div className="col-4 col-sm-5 col-xs-6">
-      <Card href="#">
+      <Card to={props.link}>
         <Img className="xs-hidden" src={props.img} alt="" />
         <Img className="lg-hidden sm-hidden" src={props.imgmob} alt="" />
         <P>{props.name}</P>

@@ -51,19 +51,21 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSection name="Homes" links="#" />
+        <TitleSection name="Homes" link="/homes" />
       </div>
 
       <div className="row rowscroll">
         {dataHomesCard.map(function(el) {
           return (
-            <Card
-              img={el.img}
-              price={el.price}
-              name={el.name}
-              entre={el.entre}
-              supershot={el.supershot}
-            />
+            <div className="col-4 col-sm-5 col-xs-8">
+              <Card
+                img={el.img}
+                price={el.price}
+                name={el.name}
+                entre={el.entre}
+                supershot={el.supershot}
+              />
+            </div>
           );
         })}
       </div>

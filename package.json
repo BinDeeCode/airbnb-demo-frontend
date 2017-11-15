@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "google-map-react": "^0.25.0",
+    "now": "^8.5.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "styled-components": "^2.2.3"
   },

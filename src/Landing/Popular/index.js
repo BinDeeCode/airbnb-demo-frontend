@@ -56,7 +56,7 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSection name="Popular reservations around the world" links="#" />
+        <TitleSection name="Popular reservations around the world" link="/" />
       </div>
 
       <div className="row rowscroll">

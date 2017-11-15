@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import arrow from "./arrowShape.svg";
-
+import { Link } from "react-router-dom";
 const Name = styled.h2`
   font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
   margin-top: 50px;
@@ -45,7 +45,7 @@ const Row = styled.div`
   padding: 0px;
 }
 `;
-const Wrapper = styled.div`
+const Wrapper = styled(Link)`
 width: 235px;
 }
 `;
@@ -56,13 +56,11 @@ export default function(props) {
       <div className="col-9 col-sm-9 col-xs-9">
         <Name>{props.name}</Name>
       </div>
-      <Wrapper>
-        <a href={props.links}>
-          <SeeAll>
-            <Text>See&nbsp;all</Text>
-            <img src={arrow} />
-          </SeeAll>
-        </a>
+      <Wrapper to={props.link}>
+        <SeeAll>
+          <Text>See&nbsp;all</Text>
+          <img src={arrow} />
+        </SeeAll>
       </Wrapper>
     </Row>
   );

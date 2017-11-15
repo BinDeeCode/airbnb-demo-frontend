@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "./gridstyle.css";
 
 const H2Title = styled.h2`
   font-family: Circular Air Bold, Arial, Helvetica, sans-serif;

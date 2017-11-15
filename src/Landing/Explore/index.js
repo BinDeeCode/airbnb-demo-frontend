@@ -1,7 +1,7 @@
 import React from "react";
-import "./fonts.css";
+import "../../fonts/fonts.css";
 import Card from "./Card";
-import TitleSectionNoAllSee from "../../UI/TitleSection";
+import TitleSectionNoAllSee from "../../UI/TitleSectionNoAllSee";
 import img from "./cardback_1.png";
 import img1 from "./cardback_2.png";
 import img2 from "./cardback_3.png";
@@ -16,9 +16,9 @@ export default function() {
       </div>
 
       <div className="row rowscroll">
-        <Card name="Homes" img={img} imgmob={imgmob} />
-        <Card name="Experiences" img={img1} imgmob={imgmob1} />
-        <Card name="Restsaurans" img={img2} imgmob={img1} />
+        <Card link="/homes" name="Homes" img={img} imgmob={imgmob} />
+        <Card link="#" name="Experiences" img={img1} imgmob={imgmob1} />
+        <Card link="#" name="Restsaurans" img={img2} imgmob={img1} />
       </div>
     </div>
   );

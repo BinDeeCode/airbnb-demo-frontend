@@ -4,7 +4,7 @@ import Card from "./Card";
 
 import arrowAside from "../../UI/arrowAside.svg";
 
-import TitleSectionNoAllSee from "../../UI/TitleSection";
+import TitleSectionNoAllSee from "../../UI/TitleSectionNoAllSee";
 
 import img1 from "./img1.png";
 import img2 from "./img2.png";

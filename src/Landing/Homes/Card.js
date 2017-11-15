@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import star from "../../star.svg";
+import star from "../../UI/star.svg";
 
 const Img = styled.img`width: 100%;`;
 const Price = styled.div`
@@ -56,22 +56,20 @@ const Wrapper = styled.div`
 export default function(props) {
   return (
     <a href="#">
-      <div className="col-4 col-sm-5 col-xs-8">
-        <Wrapper>
-          <div>
-            <Img src={props.img} alt="" />
-          </div>
-          <Title>
-            <Price>${props.price}</Price>
-            <Name>{props.name}</Name>
-          </Title>
-          <Information>{props.entre}</Information>
-          <div>
-            <Star src={star} />
-            <Superhost>{props.supershot}</Superhost>
-          </div>
-        </Wrapper>
-      </div>
+      <Wrapper>
+        <div>
+          <Img src={props.img} alt="" />
+        </div>
+        <Title>
+          <Price>${props.price}</Price>
+          <Name>{props.name}</Name>
+        </Title>
+        <Information>{props.entre}</Information>
+        <div>
+          <Star src={star} />
+          <Superhost>{props.supershot}</Superhost>
+        </div>
+      </Wrapper>
     </a>
   );
 }

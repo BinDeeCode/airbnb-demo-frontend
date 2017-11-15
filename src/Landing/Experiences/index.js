@@ -56,7 +56,7 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSection name="Experiences" links="#" />
+        <TitleSection name="Experiences" link="/" />
       </div>
       <div className="row rowscroll">
         {cards.map(function(el) {

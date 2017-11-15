@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import star from "../../star.svg";
+import star from "../../UI/star.svg";
 
 const Cards = styled.div`
   margin: 0;
