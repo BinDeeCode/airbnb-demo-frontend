@@ -40,7 +40,7 @@ const Next = styled(Page)`
 `;
 
 const Information = styled(Navigation)`
-  font-family: Circular Air;
+  font-family: "CircularAir";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -53,7 +53,6 @@ const Warning = styled(Information)`
   color: #636363;
   margin-top: 39px;
   padding-bottom: 25px;
-  font-size: 15px;
 `;
 
 export default function() {

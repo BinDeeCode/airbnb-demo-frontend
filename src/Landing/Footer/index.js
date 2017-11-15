@@ -20,7 +20,7 @@ import {
   Container,
   Select
 } from "./styled";
-
+const TextBlock = styled.div`padding-bottom: 48px;`;
 export default function() {
   return (
     <Wrapper>
@@ -84,7 +84,7 @@ export default function() {
           </div>
 
           <div className="col-3 col-sm-3 xs-hidden">
-            <div>
+            <TextBlock>
               <Title>Discover</Title>
               <div>
                 <LinkWrapper>
@@ -109,7 +109,7 @@ export default function() {
                   <Link href="#">Airbnbmag</Link>
                 </LinkWrapper>
               </div>
-            </div>
+            </TextBlock>
           </div>
 
           <div className="col-2 col-sm-2 xs-hidden">

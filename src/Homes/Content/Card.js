@@ -46,17 +46,19 @@ const Reviews = styled.span`
 
 export default function(props) {
   return (
-    <Cards>
-      <Img src={props.img} />
-      <Title>
-        <Price>${props.price}</Price>
-        <Name>{props.name}</Name>
-      </Title>
-      <Information>{props.entre}</Information>
-      <div>
-        <img src={star} />
-        <Reviews>{props.supershot}</Reviews>
-      </div>
-    </Cards>
+    <a href="#">
+      <Cards>
+        <Img src={props.img} />
+        <Title>
+          <Price>${props.price}</Price>
+          <Name>{props.name}</Name>
+        </Title>
+        <Information>{props.entre}</Information>
+        <div>
+          <img src={star} />
+          <Reviews>{props.supershot}</Reviews>
+        </div>
+      </Cards>
+    </a>
   );
 }
