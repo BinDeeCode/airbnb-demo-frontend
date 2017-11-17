@@ -25,7 +25,7 @@ const Price = styled.div`
   line-height: 23px;
   margin-top: 4px;
 `;
-const Wrapper = styled.div`width: 220px;`;
+const Wrapper = styled.div`width: 230px;`;
 
 export default function(props) {
   return (

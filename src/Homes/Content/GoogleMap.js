@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GoogleMap from "google-map-react";
 
-const Map = styled.div`
+const Gmap = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
@@ -13,7 +13,7 @@ const Map = styled.div`
 
 export default function(props) {
   return (
-    <Map className="sm-hidden xs-hidden">
+    <Gmap className="sm-hidden xs-hidden">
       <GoogleMap
         bootstrapURLKeys={{
           key: "AIzaSyAL0L8Ol0cJL2ceO1o7DY7j3K-QiV9UIxU",
@@ -22,6 +22,6 @@ export default function(props) {
         defaultCenter={props.center}
         defaultZoom={props.zoom}
       />
-    </Map>
+    </Gmap>
   );
 }

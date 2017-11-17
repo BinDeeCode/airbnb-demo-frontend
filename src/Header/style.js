@@ -74,4 +74,7 @@ export const Img = styled.img`
   margin-top: 3px;
 `;
 
-export const Logo = styled(Link)`display: flex;`;
+export const Logo = styled(Link)`
+  margin-left: -16px;
+  display: flex;
+`;

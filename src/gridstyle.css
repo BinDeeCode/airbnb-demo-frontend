@@ -171,7 +171,6 @@ body {
     flex-basis: 50%;
     padding-left: 8px;
     padding-right: 8px;
-    box-sizing: border-box;
   }
   .col-sm-7 {
     flex-basis: 58.3331%;

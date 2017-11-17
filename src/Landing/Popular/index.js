@@ -42,7 +42,7 @@ const Button = styled.div`
   width: 40px;
   border-radius: 40px;
   bottom: 140px;
-  left: calc(95% + 8px);
+  left: calc(96% + 8px);
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;

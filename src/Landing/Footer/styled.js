@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  margin-top: 16px;
+  margin-top: 48px;
   border-bottom: solid 0.5px rgba(72, 72, 72, 0.3);
   padding: 0px;
   @media (max-width: 576px) {

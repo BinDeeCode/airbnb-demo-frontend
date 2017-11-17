@@ -25,8 +25,17 @@ const Filter = styled.button`
   padding-right: 16px;
   margin-left: 12px;
   color: #383838;
+  background-color: white;
 `;
-const FirstFilter = styled(Filter)`margin-left: 0px;`;
+const FirstFilter = styled(Filter)`
+  margin-left: 0px;
+  @media (min-width: 576px) and (max-width: 992px) {
+    margin-left: -6px;
+  }
+  @media (max-width: 576px) {
+    margin-left: -6px;
+  }
+`;
 
 export default function() {
   return (

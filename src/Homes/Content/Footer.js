@@ -1,12 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import arrow from "./arrow.svg";
-
+import location from "./location.svg";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 48px;
+`;
+
+const Location = styled.div`
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(72, 72, 72, 0.16);
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
+  border-radius: 100%;
+  bottom: 24px;
+  right: 8px;
 `;
 
 const Navigation = styled.nav`
@@ -52,7 +67,7 @@ const Information = styled(Navigation)`
 const Warning = styled(Information)`
   color: #636363;
   margin-top: 39px;
-  padding-bottom: 25px;
+  padding-bottom: 88px;
 `;
 
 export default function() {
@@ -70,12 +85,18 @@ export default function() {
               </Next>
             </Navigation>
             <Information>1 – 18 of 300+ Rentals</Information>
+
             <Warning>
               Enter dates to see full pricing. Additional fees apply. Taxes may
               be added.
             </Warning>
           </Wrapper>
         </div>
+      </div>
+      <div className="lg-hidden">
+        <Location>
+          <img src={location} />
+        </Location>
       </div>
     </div>
   );

@@ -9,14 +9,14 @@ import arrowAside from "../../UI/arrowAside.svg";
 
 const dataHomesCard = [
   {
-    img: imgCard1,
+    img: imgCard3,
     price: "82",
     name: "La Salentina, see, nature & relax",
     entre: "Entire house  ·  9 beds",
     supershot: "97 · Superhost "
   },
   {
-    img: imgCard3,
+    img: imgCard1,
     price: "90",
     name: "Your private 3 bedr. riad and exclusi…",
     entre: "Entire house  ·  5 beds",
@@ -37,7 +37,7 @@ const Button = styled.div`
   width: 40px;
   border-radius: 40px;
   bottom: 155px;
-  left: calc(95% + 8px);
+  left: calc(96% + 8px);
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;

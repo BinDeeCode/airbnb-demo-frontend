@@ -42,7 +42,7 @@ export const Button = styled.div`
   width: 40px;
   border-radius: 40px;
   top: 145px;
-  right: 5px;
+  right: -8px;
   background-color: #ffffff;
   background-image: url(${arrowAside});
   background-repeat: no-repeat;

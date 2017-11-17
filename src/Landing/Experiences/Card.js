@@ -5,7 +5,7 @@ import star from "../../UI/star.svg";
 const Cards = styled.div`
   margin: 0;
   padding: 0;
-  width: 219px;
+  width: 230px;
   @media (max-width: 576px) {
     width: 180px;
   }
