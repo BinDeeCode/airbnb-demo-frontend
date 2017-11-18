@@ -116,6 +116,11 @@ body {
 /* ///// */
 
 @media (min-width: 576px) and (max-width: 992px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   .sm-hidden {
     display: none;
   }
@@ -171,6 +176,7 @@ body {
     flex-basis: 50%;
     padding-left: 8px;
     padding-right: 8px;
+    box-sizing: border-box;
   }
   .col-sm-7 {
     flex-basis: 58.3331%;

@@ -88,13 +88,25 @@ const Apply = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   color: #008489;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-family: "CircularAir";
+  font-weight: normal;
+  font-size: 16px;
 `;
 
-const Close = styled.div`
+const Close = styled.button`
   padding: 22px;
   padding-left: 30px;
   padding-right: 30px;
   color: #636363;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-family: "CircularAir";
+  font-weight: normal;
+  font-size: 16px;
 `;
 
 const DayPickerWrapper = styled.div`
@@ -174,12 +186,9 @@ export default class DropDown extends React.Component {
                     <DayPicker hideKeyboardShortcutsPanel />
 
                     <PickerControl>
-                      <a href="#">
-                        <Close onClick={this.toggleOpen}>Close</Close>
-                      </a>
-                      <a href="#">
-                        <Apply>Apply</Apply>
-                      </a>
+                      <Close onClick={this.toggleOpen}>Close</Close>
+
+                      <Apply>Apply</Apply>
                     </PickerControl>
                   </DayPickerWrapper>
                 </div>
@@ -188,12 +197,9 @@ export default class DropDown extends React.Component {
                     <DayPicker hideKeyboardShortcutsPanel numberOfMonths={1} />
 
                     <PickerControl>
-                      <a href="#">
-                        <Close onClick={this.toggleOpen}>Close</Close>
-                      </a>
-                      <a href="#">
-                        <Apply>Apply</Apply>
-                      </a>
+                      <Close onClick={this.toggleOpen}>Close</Close>
+
+                      <Apply>Apply</Apply>
                     </PickerControl>
                   </DayPickerWrapper>
                 </div>

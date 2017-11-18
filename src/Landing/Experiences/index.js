@@ -5,7 +5,7 @@ import img1 from "./expcardbg.png";
 import img2 from "./cardBg1.png";
 import img3 from "./cardBg2.png";
 import img4 from "./cardBg3.png";
-import TitleSection from "../../UI/TitleSection";
+import TitleSectionAndAllSee from "../../UI/TitleSectionAndAllSee";
 import arrowAside from "../../UI/arrowAside.svg";
 
 const cards = [
@@ -35,7 +35,7 @@ const cards = [
   }
 ];
 
-export const Button = styled.div`
+export const ScrollLg = styled.div`
   position: absolute;
 
   height: 40px;
@@ -56,7 +56,7 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSection name="Experiences" link="/" />
+        <TitleSectionAndAllSee name="Experiences" link="/" />
       </div>
       <div className="row rowscroll">
         {cards.map(function(el) {
@@ -72,7 +72,7 @@ export default function() {
           );
         })}
         <a href="#" className="sm-hidden xs-hidden">
-          <Button />
+          <ScrollLg />
         </a>
       </div>
     </div>

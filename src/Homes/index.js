@@ -4,15 +4,15 @@ import Filters from "./Filters";
 import Content from "./Content";
 import styled from "styled-components";
 
-const Div = styled.div`height: 81px;`;
-const Div2 = styled.div`height: 55px;`;
+const PaddingHeader = styled.div`height: 81px;`;
+const PaddingFilters = styled.div`height: 55px;`;
 
 export default function() {
   return (
     <div>
-      <Div />
+      <PaddingHeader />
       <Filters />
-      <Div2 />
+      <PaddingFilters />
       <Content />
     </div>
   );

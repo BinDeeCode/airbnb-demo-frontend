@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
+import DropDown from "./DropDown";
 
 const Background = styled.div`
   border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
@@ -30,23 +30,26 @@ export default function() {
         <div className="row">
           <Div>
             <Wrapper>
-              <Button
+              <DropDown
                 type="calendar"
                 value="Dates"
                 openValue="Check in — Check out"
               />
-              <Button type="guests" value="Guests" openValue="Guests" />
+              <DropDown type="guests" value="Guests" openValue="Guests" />
               <div className="xs-hidden sm-hidden">
-                <Button value="Room type" />
+                <DropDown value="Room type" openValue="Room type" />
               </div>
               <div className="xs-hidden sm-hidden">
-                <Button value="Price" />
+                <DropDown value="Price" openValue="Price" />
               </div>
               <div className="xs-hidden sm-hidden">
-                <Button value="Instant book" />
+                <DropDown value="Instant book" openValue="Instant book" />
               </div>
 
-              <Button value="More&nbsp;filters" />
+              <DropDown
+                value="More&nbsp;filters"
+                openValue="More&nbsp;filters"
+              />
             </Wrapper>
           </Div>
         </div>

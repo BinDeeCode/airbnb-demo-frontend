@@ -10,7 +10,7 @@ import {
   Inc,
   ImgSoc,
   Block,
-  LinkWrapper,
+  LinkPosition,
   Logo,
   FlexImg,
   Title,
@@ -61,24 +61,24 @@ export default function() {
             <div>
               <Title>Airbnb</Title>
               <div>
-                <LinkWrapper>
+                <LinkPosition>
                   <Link href="#">About us</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Careers</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Press</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Policies</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Help</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Diversity & Belonging</Link>
-                </LinkWrapper>
+                </LinkPosition>
               </div>
             </div>
           </div>
@@ -87,27 +87,27 @@ export default function() {
             <TextBlock>
               <Title>Discover</Title>
               <div>
-                <LinkWrapper>
+                <LinkPosition>
                   <Link href="#">Trust & Safety</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Travel Credit</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Gift Cards</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Airbnb Citizen</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Business Travel</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Guidebooks</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Airbnbmag</Link>
-                </LinkWrapper>
+                </LinkPosition>
               </div>
             </TextBlock>
           </div>
@@ -116,18 +116,18 @@ export default function() {
             <div>
               <Title>Hosting</Title>
               <div>
-                <LinkWrapper>
+                <LinkPosition>
                   <Link href="#">Why Host</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Hospitality</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Responsible Hosting</Link>
-                </LinkWrapper>
-                <LinkWrapper>
+                </LinkPosition>
+                <LinkPosition>
                   <Link href="#">Community Center</Link>
-                </LinkWrapper>
+                </LinkPosition>
               </div>
             </div>
           </div>

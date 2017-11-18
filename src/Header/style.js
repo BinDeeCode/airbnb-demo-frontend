@@ -27,9 +27,12 @@ export const Input = styled.input`
   background-image: url(${search});
   background-repeat: no-repeat;
 
-  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: normal;
+  line-height: 24px;
   font-size: 16px;
-  color: #3838383;
+
+  color: #383838;
   background-position: 16.2px center;
   &:focus {
     outline: none;
@@ -40,14 +43,17 @@ export const Input = styled.input`
   }
 `;
 
-export const Paragraph = styled.a`
+export const Item = styled.a`
   text-decoration: none;
   line-height: 24px;
   font-size: 14px;
   padding-left: 8px;
   padding-right: 8px;
   margin-left: 8px;
-  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
   color: #383838;
 `;
 
@@ -71,13 +77,8 @@ export const Container = styled.div`
 
 export const Img = styled.img`
   padding: 10px;
+  padding-left: 0px;
   margin-top: 3px;
 `;
 
-export const Logo = styled(Link)`
-  margin-left: -19px;
-  display: flex;
-  @media (min-width: 576px) and (max-width: 992px) {
-    margin-left: -10px;
-  }
-`;
+export const Logo = styled(Link)`display: flex;`;

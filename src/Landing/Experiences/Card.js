@@ -15,20 +15,22 @@ const Img = styled.img`
   width: 100%;
 `;
 
-const Title = styled.div`margin-top: 8px;`;
+const Information = styled.div`margin-top: 8px;`;
 
 const Price = styled.span`
   margin: 0;
+  font-family: "CircularAir";
+  font-weight: bold;
   font-size: 15px;
+
   color: #383838;
-  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
 `;
 const Name = styled.span`
   margin: 0;
   margin: 0;
+  font-family: "CircularAir";
+  font-weight: 300;
   font-size: 15px;
-  color: #383838;
-  font-family: "Circular Air Light", Arial, Helvetica, sans-serif;
   padding-left: 8px;
 `;
 
@@ -46,10 +48,10 @@ export default function(props) {
     <a href="#">
       <Cards>
         <Img src={props.img} />
-        <Title>
+        <Information>
           <Price>${props.price}</Price>
           <Name>{props.name}</Name>
-        </Title>
+        </Information>
         <Raiting>
           <img src={star} />
           <Reviews>{props.reviews} reviews</Reviews>

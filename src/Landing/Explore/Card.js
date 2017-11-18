@@ -20,11 +20,13 @@ const Card = styled(Link)`
 `;
 
 const P = styled.p`
-  font-size: 17px;
-  color: #383838;
   margin-left: 24px;
-  font-family: "CircularAir", Arial, Helvetica, sans-serif;
+  font-family: Circular Air;
   font-weight: bold;
+  line-height: normal;
+  font-size: 17px;
+
+  color: #383838;
   @media (max-width: 576px) {
     margin: 0px;
     margin-left: 20px;

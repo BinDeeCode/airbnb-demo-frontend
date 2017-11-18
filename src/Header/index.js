@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Menu,
-  Row,
-  Paragraph,
-  Logo,
-  Header,
-  Input,
-  Container,
-  Img
-} from "./style";
+import { Menu, Row, Item, Logo, Header, Input, Container, Img } from "./style";
 
 import logo from "./logo.svg";
 import arrow from "./arrow.svg";
@@ -17,31 +8,31 @@ export default function() {
   return (
     <Header>
       <Container className="container">
-        <Row className="rows">
-          <div className="col-1 col-sm-1 col-xs-2">
+        <Row>
+          <div className="col-xs-2 col-sm-1 col-1">
             <Logo to="/">
               <Img src={logo} />
               <img className="lg-hidden" src={arrow} />
             </Logo>
           </div>
-          <div className="col-5 col-sm-7 col-xs-10">
+          <div className="col-xs-10 col-sm-7 col-5">
             <Input type="text" placeholder="Try “Miami”" />
           </div>
-          <div className="col-2 sm-hidden xs-hidden" />
-          <div className="col-4 sm-hidden xs-hidden">
+          <div className="xs-hidden sm-hidden col-2" />
+          <div className="xs-hidden sm-hidden col-4">
             <Menu>
-              <Paragraph href="#">
+              <Item href="#">
                 <p> Become a host </p>
-              </Paragraph>
-              <Paragraph href="#">
+              </Item>
+              <Item href="#">
                 <p> Help </p>
-              </Paragraph>
-              <Paragraph href="#">
+              </Item>
+              <Item href="#">
                 <p> Sign Up </p>
-              </Paragraph>
-              <Paragraph href="#">
+              </Item>
+              <Item href="#">
                 <p> Log In </p>
-              </Paragraph>
+              </Item>
             </Menu>
           </div>
         </Row>

@@ -12,6 +12,16 @@ const Subtitle = styled.div`
   margin-top: 7px;
 `;
 
+const Title = styled.h3`
+  font-family: "CircularAir";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 10px;
+  font-size: 20px;
+
+  color: #383838;
+`;
+
 const HeaderXs = styled.div`
   position: fixed;
   width: 100%;
@@ -30,7 +40,7 @@ const HeaderXs = styled.div`
   color: #383838;
 `;
 
-const Img = styled.div`
+const Close = styled.div`
   margin-left: 12px;
   margin-top: 4px;
 `;
@@ -117,11 +127,12 @@ const Save = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px;
 `;
 
 const ButtonSave = styled.button`
-  width: calc(100% - 12px);
-  height: calc(100% - 12px);
+  width: 100%;
+  height: 100%;
   background: #ff5a5f;
   border-radius: 4px;
   color: white;
@@ -132,7 +143,7 @@ const ButtonSave = styled.button`
   border: 0;
 `;
 
-const Col = styled.div`
+const Item = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -158,7 +169,7 @@ const ActionApply = styled.div`
   padding-right: 35px;
   color: #008489;
 `;
-const Number = styled.div`
+const Count = styled.div`
   padding-left: 19px;
   padding-right: 19px;
 `;
@@ -190,14 +201,14 @@ export default function() {
         <GuestsCard>
           <div>
             <Row>
-              <div>Adults</div>
+              <Title>Adults</Title>
               <Input>
                 <a href="#">
                   <Minus>
                     <img src={minus} alt="" />
                   </Minus>
                 </a>
-                <Number>0</Number>
+                <Count>0</Count>
                 <a href="#">
                   <Plus>
                     <img src={plus} alt="" />
@@ -206,17 +217,17 @@ export default function() {
               </Input>
             </Row>
             <Row>
-              <Col>
-                <div>Children</div>
+              <Item>
+                <Title>Children</Title>
                 <Subtitle>Ages 2 — 12</Subtitle>
-              </Col>
+              </Item>
               <Input>
                 <a href="#">
                   <Minus>
                     <img src={minus} alt="" />
                   </Minus>
                 </a>
-                <Number>0</Number>
+                <Count>0</Count>
                 <a href="#">
                   <Plus>
                     <img src={plus} alt="" />
@@ -225,17 +236,17 @@ export default function() {
               </Input>
             </Row>
             <Row>
-              <Col>
-                <div>Infants</div>
+              <Item>
+                <Title>Infants</Title>
                 <Subtitle>Under 2</Subtitle>
-              </Col>
+              </Item>
               <Input>
                 <a href="#">
                   <Minus>
                     <img src={minus} alt="" />
                   </Minus>
                 </a>
-                <Number>0</Number>
+                <Count>0</Count>
                 <a href="#">
                   <Plus>
                     <img src={plus} alt="" />
@@ -255,9 +266,9 @@ export default function() {
             </div>
             <div className="lg-hidden sm-hidden">
               <HeaderXs>
-                <Img>
+                <Close>
                   <img src={close} alt="" />
-                </Img>
+                </Close>
                 <div>Guest</div>
                 <Reset>Reset</Reset>
               </HeaderXs>

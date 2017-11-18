@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import styled from "styled-components";
 import "./gridstyle.css";
+import "./fonts/fonts.css";
+
 import { BrowserRoutre, Route, BrowserRouter } from "react-router-dom";
 
 import Landing from "./Landing";

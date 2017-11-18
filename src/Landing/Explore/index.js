@@ -1,7 +1,7 @@
 import React from "react";
 import "../../fonts/fonts.css";
 import Card from "./Card";
-import TitleSectionNoAllSee from "../../UI/TitleSectionNoAllSee";
+import TitleSection from "../../UI/TitleSection";
 import img2 from "./cardback_1.png";
 import img1 from "./cardback_2.png";
 import img from "./cardback_3.png";
@@ -12,7 +12,7 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSectionNoAllSee name="Explore Airbnb" />
+        <TitleSection name="Explore Airbnb" />
       </div>
 
       <div className="row rowscroll">

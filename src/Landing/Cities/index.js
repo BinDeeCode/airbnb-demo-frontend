@@ -4,7 +4,7 @@ import Card from "./Card";
 
 import arrowAside from "../../UI/arrowAside.svg";
 
-import TitleSectionNoAllSee from "../../UI/TitleSectionNoAllSee";
+import TitleSection from "../../UI/TitleSection";
 
 import img1 from "./img1.png";
 import img2 from "./img2.png";
@@ -40,7 +40,7 @@ const cities = [
   }
 ];
 
-const Button = styled.div`
+const ScrollLg = styled.div`
   position: absolute;
   height: 40px;
   width: 40px;
@@ -60,7 +60,7 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSectionNoAllSee name="Featured destinations" />
+        <TitleSection name="Featured destinations" />
       </div>
 
       <div className="row rowscroll">
@@ -75,7 +75,7 @@ export default function() {
 
       <div className="row">
         <a href="#" className="sm-hidden xs-hidden">
-          <Button />
+          <ScrollLg />
         </a>
       </div>
     </div>

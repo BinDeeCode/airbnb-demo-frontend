@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import star from "../../UI/star.svg";
+import star from "../UI/star.svg";
 
-const Cards = styled.div`
+const Card = styled.a`
   margin-top: 24px;
+  display: block;
   padding: 0;
 `;
 const Img = styled.img`
@@ -46,19 +47,17 @@ const Reviews = styled.span`
 
 export default function(props) {
   return (
-    <a href="#">
-      <Cards>
-        <Img src={props.img} />
-        <Title>
-          <Price>${props.price}</Price>
-          <Name>{props.name}</Name>
-        </Title>
-        <Information>{props.entre}</Information>
-        <div>
-          <img src={star} />
-          <Reviews>{props.supershot}</Reviews>
-        </div>
-      </Cards>
-    </a>
+    <Card href="#">
+      <Img src={props.img} />
+      <Title>
+        <Price>${props.price}</Price>
+        <Name>{props.name}</Name>
+      </Title>
+      <Information>{props.roomtype}</Information>
+      <div>
+        <img src={star} />
+        <Reviews>{props.superhot}</Reviews>
+      </div>
+    </Card>
   );
 }
