@@ -15,10 +15,7 @@ export default function(props) {
   return (
     <Gmap className="sm-hidden xs-hidden">
       <GoogleMap
-        bootstrapURLKeys={{
-          key: "AIzaSyAL0L8Ol0cJL2ceO1o7DY7j3K-QiV9UIxU",
-          language: "en"
-        }}
+        apiKey={process.env.REACT_APP_GOOGLE_MAP_KEY}
         defaultCenter={props.center}
         defaultZoom={props.zoom}
       />
