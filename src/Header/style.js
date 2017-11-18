@@ -75,6 +75,9 @@ export const Img = styled.img`
 `;
 
 export const Logo = styled(Link)`
-  margin-left: -16px;
+  margin-left: -19px;
   display: flex;
+  @media (min-width: 576px) and (max-width: 992px) {
+    margin-left: -10px;
+  }
 `;
