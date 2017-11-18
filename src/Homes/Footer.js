@@ -74,7 +74,7 @@ export default function() {
   return (
     <div>
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 col-sm-12">
           <Wrapper>
             <Navigation>
               <Active href="#">1</Active> <Page href="#">2</Page>

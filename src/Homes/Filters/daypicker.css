@@ -1,0 +1,7 @@
+.DayPickerNavigation_container__vertical {
+  display: none;
+}
+
+.DayPicker__horizontal {
+  box-shadow: none !important;
+}

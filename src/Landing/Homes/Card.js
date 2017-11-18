@@ -22,14 +22,16 @@ const Star = styled.img`
 `;
 
 const Title = styled.div`
-  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: bold;
   font-size: 15px;
   color: #383838;
   margin-top: 8px;
 `;
 
 const Information = styled.div`
-  font-family: "Circular Air Light", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: 300;
   font-size: 15px;
   color: #383838;
   margin-top: 2px;
@@ -37,7 +39,8 @@ const Information = styled.div`
 `;
 
 const Superhost = styled.div`
-  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: normal;
   font-size: 12px;
   color: #383838;
   display: flex;

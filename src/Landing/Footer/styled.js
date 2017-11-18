@@ -21,16 +21,19 @@ export const Select = styled.select`
   width: 100%;
   border: 1px solid rgba(72, 72, 72, 0.2);
   background-color: white;
-  font-family: Circular Air Light, Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: 300;
   font-size: 18px;
+
+  color: #383838;
   border-radius: 4px;
   margin-bottom: 16px;
   background-image: url(${arrow});
   background-repeat: no-repeat;
   background-position: calc(100% - 15px) center;
   padding: 10px;
+  padding-left: 15px;
   box-decoration-break: none;
-  color: #383838;
   appearance: none;
   :-ms-expand {
     display: none;
@@ -52,20 +55,24 @@ export const Select = styled.select`
 export const Title = styled.div`
   padding: 0;
   padding-bottom: 16px;
-  font-family: "Circular Air Bold", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: bold;
   font-size: 15px;
+
+  color: #383838;
   line-height: 19px;
-  color: #3838383;
 `;
 
-export const LinkWrapper = styled.nav`
+export const LinkPosition = styled.nav`
   margin-top: 0px;
   padding-bottom: 8px;
 `;
 
 export const Link = styled.a`
+  font-family: "CircularAir";
+  font-weight: normal;
   font-size: 15px;
-  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+
   color: #636363;
   text-decoration: none;
   &:hover {
@@ -100,10 +107,12 @@ export const FlexImg = styled.div`
 `;
 
 export const Inc = styled.div`
-  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: normal;
   font-size: 15px;
+
+  color: #636363;
   text-decoration: none;
-  color: #383838;
   margin-left: 16px;
   width: 100%;
   @media (min-width: 576px) and (max-width: 992px) {
@@ -120,10 +129,12 @@ export const ImgSoc = styled.img`
 `;
 
 export const Privacy = styled.div`
-  font-family: "Circular Air Book", Arial, Helvetica, sans-serif;
+  font-family: "CircularAir";
+  font-weight: normal;
   font-size: 15px;
+
+  color: #636363;
   text-decoration: none;
-  color: #383838;
   padding-left: 16px;
   @media (min-width: 576px) and (max-width: 992px) {
     font-size: 13px;

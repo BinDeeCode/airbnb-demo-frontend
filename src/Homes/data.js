@@ -11,42 +11,42 @@ export default [
     img: imgCard1,
     price: 82,
     name: "La Salentina, see, nature & relax",
-    entre: "Entire house  ·  9 beds",
-    supershot: "97 · Superhost"
+    roomtype: "Entire house  ·  9 beds",
+    superhot: "97 · Superhost"
   },
   {
     img: imgCard2,
     price: 82,
     name: "Your private 3 bedr. riad and exclusi…",
-    entre: "Entrie house  ·  5 beds",
-    supershot: "161 · Superhost"
+    roomtype: "Entrie house  ·  5 beds",
+    superhot: "161 · Superhost"
   },
   {
     img: imgCard3,
     price: 200,
     name: "Dreamy Tropical Tree House",
-    entre: "Entrie treehouse  ·  1 bed",
-    supershot: "364 · Superhost"
+    roomtype: "Entrie treehouse  ·  1 bed",
+    superhot: "364 · Superhost"
   },
   {
     img: imgCard4,
     price: 110,
     name: "Best location old town luxury loft",
-    entre: "Entrie apartment  ·  1 bed",
-    supershot: "369 · Superhost"
+    roomtype: "Entrie apartment  ·  1 bed",
+    superhot: "369 · Superhost"
   },
   {
     img: imgCard5,
     price: 83,
     name: "Lussuoso. Vista incantevole.",
-    entre: "Entrie apartment  ·  6 bed",
-    supershot: "105 · Superhost"
+    roomtype: "Entrie apartment  ·  6 bed",
+    superhot: "105 · Superhost"
   },
   {
     img: imgCard6,
     price: 72,
     name: "In the historical center of Lecce",
-    entre: "Entire house  ·  3 beds",
-    supershot: "221 · Superhost "
+    roomtype: "Entire house  ·  3 beds",
+    superhot: "221 · Superhost "
   }
 ];

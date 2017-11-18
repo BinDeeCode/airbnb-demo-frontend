@@ -6,6 +6,8 @@
     "google-map-react": "^0.25.0",
     "now": "^8.5.1",
     "react": "^16.0.0",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^15.1.0",
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",

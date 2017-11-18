@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import TitleSection from "../../UI/TitleSection";
+import TitleSectionAndAllSee from "../../UI/TitleSectionAndAllSee";
 import Card from "./Card";
 import img1 from "./img1.png";
 import img2 from "./img2.png";
@@ -36,7 +36,7 @@ const cards = [
   }
 ];
 
-const Button = styled.div`
+const ScrollLg = styled.div`
   position: absolute;
   height: 40px;
   width: 40px;
@@ -56,7 +56,10 @@ export default function() {
   return (
     <div className="container">
       <div className="row">
-        <TitleSection name="Popular reservations around the world" link="/" />
+        <TitleSectionAndAllSee
+          name="Popular reservations around the world"
+          link="/"
+        />
       </div>
 
       <div className="row rowscroll">
@@ -75,7 +78,7 @@ export default function() {
       </div>
       <div className="row">
         <a href="#" className="sm-hidden xs-hidden">
-          <Button />
+          <ScrollLg />
         </a>
       </div>
     </div>
