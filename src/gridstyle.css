@@ -34,78 +34,78 @@ body {
     margin-right: auto;
     width: 992px;
   }
-  .col-1 {
+  .col-lg-1 {
     flex-basis: 8.3333%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
-  .col-2 {
+  .col-lg-2 {
     flex-basis: 16.4444%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
 
-  .col-3 {
+  .col-lg-3 {
     flex-basis: 24.9999%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
 
-  .col-4 {
+  .col-lg-4 {
     flex-basis: 33.3333%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
 
-  .col-5 {
+  .col-lg-5 {
     flex-basis: 41.6665%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
-  .col-6 {
+  .col-lg-6 {
     flex-basis: 50%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
-  .col-7 {
+  .col-lg-7 {
     flex-basis: 58.3331%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
-  .col-8 {
+  .col-lg-8 {
     flex-basis: 66.6664%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
-  .col-9 {
+  .col-lg-9 {
     flex-basis: 75%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
 
-  .col-10 {
+  .col-lg-10 {
     flex-basis: 83.3333%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
 
-  .col-11 {
+  .col-lg-11 {
     flex-basis: 91.6663%;
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
   }
-  .col-12 {
+  .col-lg-12 {
     flex-basis: 100%;
     padding-left: 8px;
     padding-right: 8px;

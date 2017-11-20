@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "google-map-react": "^0.25.0",
+    "lodash": "^4.17.4",
     "now": "^8.5.1",
     "react": "^16.0.0",
     "react-addons-shallow-compare": "^15.6.2",

@@ -57,7 +57,7 @@ export default function() {
       <div className="row rowscroll">
         {dataHomesCard.map(function(el) {
           return (
-            <div className="col-4 col-sm-5 col-xs-8">
+            <div className="col-lg-4 col-sm-5 col-xs-8">
               <Card
                 img={el.img}
                 price={el.price}

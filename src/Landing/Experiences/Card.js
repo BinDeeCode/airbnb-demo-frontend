@@ -29,6 +29,7 @@ const Name = styled.span`
   margin: 0;
   margin: 0;
   font-family: "CircularAir";
+  color: #383838;
   font-weight: 300;
   font-size: 15px;
   padding-left: 8px;

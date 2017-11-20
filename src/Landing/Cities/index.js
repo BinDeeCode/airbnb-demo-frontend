@@ -66,7 +66,7 @@ export default function() {
       <div className="row rowscroll">
         {cities.map(function(el) {
           return (
-            <div className="col-2 col-sm-3 col-xs-4">
+            <div className="col-xs-4 col-sm-3 col-lg-2">
               <Card img={el.img} city={el.city} />
             </div>
           );

@@ -26,7 +26,7 @@ export default function() {
     <Wrapper>
       <Container className="container">
         <div className="row rownoscroll">
-          <div className="col-3 col-sm-4 xs-hidden">
+          <div className="col-lg-3 col-sm-4 xs-hidden">
             <Select>
               <option>English</option>
               <option>Русский</option>
@@ -56,8 +56,8 @@ export default function() {
               <option>Юани</option>
             </Select>
           </div>
-          <div className="col-1 sm-hidden xs-hidden" />
-          <div className="col-3 col-sm-3 xs-hidden">
+          <div className="col-lg-1 sm-hidden xs-hidden" />
+          <div className="col-lg-3 col-sm-3 xs-hidden">
             <div>
               <Title>Airbnb</Title>
               <div>
@@ -83,7 +83,7 @@ export default function() {
             </div>
           </div>
 
-          <div className="col-3 col-sm-3 xs-hidden">
+          <div className="col-lg-3 col-sm-3 xs-hidden">
             <TextBlock>
               <Title>Discover</Title>
               <div>
@@ -112,7 +112,7 @@ export default function() {
             </TextBlock>
           </div>
 
-          <div className="col-2 col-sm-2 xs-hidden">
+          <div className="col-lg-2 col-sm-2 xs-hidden">
             <div>
               <Title>Hosting</Title>
               <div>
@@ -136,13 +136,13 @@ export default function() {
 
       <div className="container">
         <RowWrapper className="row">
-          <Block className="col-8 col-sm-3 col-xs-12">
+          <Block className="col-lg-8 col-sm-3 col-xs-12">
             <a href="#">
               <img src={logo} />
             </a>
             <Inc>© Airbnb Inc.</Inc>
           </Block>
-          <Block className="col-4 col-sm-9 col-xs-12">
+          <Block className="col-lg-4 col-sm-9 col-xs-12">
             <a href="#">
               <Privacy>Terms</Privacy>
             </a>
