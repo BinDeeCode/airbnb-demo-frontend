@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DropDown from "./DropDown";
+import Filter from "./Filter";
 
 const Background = styled.div`
   border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
@@ -11,49 +11,40 @@ const Background = styled.div`
 `;
 
 const Div = styled.div`
-  margin-left: -5px;
-  @media (min-width: 576px) and (max-width: 992px) {
+  margin-left: -13px;
+  @media (min-width: 576px) {
     margin-left: -5px;
-  }
-
-  @media (max-width: 576px) {
-    margin-left: -13px;
   }
 `;
 
 const Wrapper = styled.div`display: flex;`;
 
-export default function() {
-  return (
-    <Background>
-      <div className="container">
-        <div className="row">
-          <Div>
-            <Wrapper>
-              <DropDown
-                type="calendar"
-                value="Dates"
-                openValue="Check in — Check out"
-              />
-              <DropDown type="guests" value="Guests" openValue="Guests" />
-              <div className="xs-hidden sm-hidden">
-                <DropDown value="Room type" openValue="Room type" />
-              </div>
-              <div className="xs-hidden sm-hidden">
-                <DropDown value="Price" openValue="Price" />
-              </div>
-              <div className="xs-hidden sm-hidden">
-                <DropDown value="Instant book" openValue="Instant book" />
-              </div>
+export default class Filters extends React.Component {
+  render() {
+    return (
+      <Background>
+        <div className="container">
+          <div className="row">
+            <Div>
+              <Wrapper>
+                <Filter label="Dates" />
+                <Filter label="Guests" />
+                <div className="xs-hidden sm-hidden">
+                  <Filter label="Room type" />
+                </div>
+                <div className="xs-hidden sm-hidden">
+                  <Filter label="Price" />
+                </div>
+                <div className="xs-hidden sm-hidden">
+                  <Filter label="Instant book" />
+                </div>
 
-              <DropDown
-                value="More&nbsp;filters"
-                openValue="More&nbsp;filters"
-              />
-            </Wrapper>
-          </Div>
+                <Filter label="More filters" />
+              </Wrapper>
+            </Div>
+          </div>
         </div>
-      </div>
-    </Background>
-  );
+      </Background>
+    );
+  }
 }

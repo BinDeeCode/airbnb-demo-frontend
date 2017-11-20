@@ -10,12 +10,10 @@ export const Header = styled.header`
   background: #ffffff;
   border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
   height: 80px;
-  @media (max-width: 576px) {
-    width: 100%;
-  }
 `;
 
 export const Input = styled.input`
+  width: 100%;
   height: 48px;
   border: 1px solid rgba(72, 72, 72, 0.2);
 
@@ -23,7 +21,6 @@ export const Input = styled.input`
   box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   border-radius: 4px;
   padding-left: 53px;
-  width: 392px;
   background-image: url(${search});
   background-repeat: no-repeat;
 
@@ -38,12 +35,32 @@ export const Input = styled.input`
     outline: none;
   }
 
-  @media (max-width: 576px) {
-    width: 100%;
+  @media (min-width: 576px) {
+    height: 48px;
+    border: 1px solid rgba(72, 72, 72, 0.2);
+
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
+    border-radius: 4px;
+    padding-left: 53px;
+    width: 392px;
+    background-image: url(${search});
+    background-repeat: no-repeat;
+
+    font-family: "CircularAir";
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+
+    color: #383838;
+    background-position: 16.2px center;
+    &:focus {
+      outline: none;
+    }
   }
 `;
 
-export const Item = styled.a`
+export const Li = styled.a`
   text-decoration: none;
   line-height: 24px;
   font-size: 14px;
@@ -66,6 +83,7 @@ export const Row = styled.div`
 export const Menu = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 `;
 
 export const Container = styled.div`

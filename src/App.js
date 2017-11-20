@@ -4,11 +4,12 @@ import styled from "styled-components";
 import "./gridstyle.css";
 import "./fonts/fonts.css";
 
-import { BrowserRoutre, Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 
 import Landing from "./Landing";
 import Homes from "./Homes";
 import Header from "./Header";
+import Rooms from "./Rooms";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Header />
           <Route path="/" exact component={Landing} />
           <Route path="/homes" exact component={Homes} />
+          <Route path="/rooms" exact component={Rooms} />
         </div>
       </BrowserRouter>
     );

@@ -20,61 +20,61 @@ export default function() {
   return (
     <List>
       <div className="row">
-        <div className="col-6 col-sm-6">
+        <div className="col-lg-6 col-sm-6">
           <Card
             img={data[0].img}
             price={data[0].price}
             name={data[0].name}
             roomtype={data[0].roomtype}
-            superhot={data[0].superhot}
+            superhost={data[0].superhost}
           />
         </div>
-        <div className="col-6 col-sm-6">
+        <div className="col-lg-6 col-sm-6">
           <Card
             img={data[1].img}
             price={data[1].price}
             name={data[1].name}
             roomtype={data[1].roomtype}
-            superhot={data[1].superhot}
+            superhost={data[1].superhost}
           />
         </div>
-        <div className="col-6 col-sm-6">
+        <div className="col-lg-6 col-sm-6">
           <Card
             img={data[2].img}
             price={data[2].price}
             name={data[2].name}
             roomtype={data[2].roomtype}
-            superhot={data[2].superhot}
+            superhost={data[2].superhost}
           />
         </div>
-        <div className="col-6 col-sm-6">
+        <div className="col-lg-6 col-sm-6">
           <Card
             img={data[3].img}
             price={data[3].price}
             name={data[3].name}
             roomtype={data[3].roomtype}
-            superhot={data[3].superhot}
+            superhost={data[3].superhost}
           />
         </div>
-        <div className="col-6 col-sm-6">
+        <div className="col-lg-6 col-sm-6">
           <Card
             img={data[4].img}
             price={data[4].price}
             name={data[4].name}
             roomtype={data[4].roomtype}
-            superhot={data[4].superhot}
+            superhost={data[4].superhost}
           />
         </div>
-        <div className="col-6 col-sm-6 ">
+        <div className="col-lg-6 col-sm-6 ">
           <Card
             img={data[5].img}
             price={data[5].price}
             name={data[5].name}
             roomtype={data[5].roomtype}
-            superhot={data[5].superhot}
+            superhost={data[5].superhost}
           />
         </div>
-        <div className=" col-12 col-sm-12">
+        <div className=" col-lg-12 col-sm-12">
           <Footer />
         </div>
       </div>

@@ -40,14 +40,24 @@ const HeaderXs = styled.div`
   color: #383838;
 `;
 
-const Close = styled.div`
+const Close = styled.button`
   margin-left: 12px;
   margin-top: 4px;
+  background-color: white;
+  border: none;
+  outline: none;
 `;
 
-const Reset = styled.div`
-  color: #0f7276;
+const Reset = styled.button`
   margin-right: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-family: "CircularAir";
+  font-weight: normal;
+  font-size: 14px;
+
+  color: #0f7276;
 `;
 
 const Action = styled.div`
@@ -59,30 +69,30 @@ const Action = styled.div`
   text-align: center;
   margin-top: 23px;
 `;
-const Input = styled.div`
+const Wrapper = styled.div`
   position: absolute;
   display: flex;
-  right: 15px;
+  right: 10px;
   align-items: center;
   font-family: "CircularAir", Arial, Helvetica, sans-serif;
   font-weight: 200;
   font-size: 18px;
-  @media (max-width: 576px) {
-    right: 10px;
+  @media (min-width: 576px) {
+    right: 15px;
   }
 `;
 
 const Row = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 12px;
   margin-top: 28px;
   font-family: "CircularAir", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: #383838;
-  @media (max-width: 576px) {
-    margin-left: 12px;
+  @media (min-width: 576px) {
+    margin-left: 24px;
   }
 `;
 
@@ -97,22 +107,27 @@ const Background = styled.div`
 
 const GuestsCard = styled.div`
   z-index: 1;
-  width: 326px;
+
   background: #ffffff;
-  border: 1px solid rgba(72, 72, 72, 0.2);
+  border: none;
   box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   border-radius: 4px;
-  margin-left: 83px;
-  position: relative;
-  @media (max-width: 576px) {
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 48px;
-    height: 100%;
+
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 48px;
+  height: 100%;
+
+  @media (min-width: 576px) {
+    position: relative;
+    width: 326px;
+    margin-left: 83px;
+    top: 0px;
+    border: 1px solid rgba(72, 72, 72, 0.2);
+    box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   }
 `;
 
@@ -123,7 +138,7 @@ const Save = styled.div`
   background: #ffffff;
   box-shadow: 0px -1px 0px #d5d5d5;
   height: 64px;
-  width: 100%;
+  width: calc(100% - 24px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +158,7 @@ const ButtonSave = styled.button`
   border: 0;
 `;
 
-const Item = styled.div`
+const Option = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -156,18 +171,30 @@ const DropDownCard = styled.div`
   }
 `;
 
-const ActionCancel = styled.div`
+const ActionCancel = styled.button`
   padding: 25px;
   padding-left: 35px;
   padding-right: 35px;
+  border: none;
+  font-family: "CircularAir";
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
   color: #636363;
 `;
 
-const ActionApply = styled.div`
+const ActionApply = styled.button`
+  font-family: "CircularAir";
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
   padding: 25px;
   padding-left: 35px;
   padding-right: 35px;
   color: #008489;
+  outline: none;
+  border: none;
 `;
 const Count = styled.div`
   padding-left: 19px;
@@ -202,7 +229,7 @@ export default function() {
           <div>
             <Row>
               <Title>Adults</Title>
-              <Input>
+              <Wrapper>
                 <a href="#">
                   <Minus>
                     <img src={minus} alt="" />
@@ -214,54 +241,47 @@ export default function() {
                     <img src={plus} alt="" />
                   </Plus>
                 </a>
-              </Input>
+              </Wrapper>
             </Row>
             <Row>
-              <Item>
+              <Option>
                 <Title>Children</Title>
                 <Subtitle>Ages 2 — 12</Subtitle>
-              </Item>
-              <Input>
-                <a href="#">
-                  <Minus>
-                    <img src={minus} alt="" />
-                  </Minus>
-                </a>
+              </Option>
+              <Wrapper>
+                <Minus>
+                  <img src={minus} alt="" />
+                </Minus>
+
                 <Count>0</Count>
-                <a href="#">
-                  <Plus>
-                    <img src={plus} alt="" />
-                  </Plus>
-                </a>
-              </Input>
+
+                <Plus>
+                  <img src={plus} alt="" />
+                </Plus>
+              </Wrapper>
             </Row>
             <Row>
-              <Item>
+              <Option>
                 <Title>Infants</Title>
                 <Subtitle>Under 2</Subtitle>
-              </Item>
-              <Input>
-                <a href="#">
-                  <Minus>
-                    <img src={minus} alt="" />
-                  </Minus>
-                </a>
+              </Option>
+              <Wrapper>
+                <Minus>
+                  <img src={minus} alt="" />
+                </Minus>
+
                 <Count>0</Count>
-                <a href="#">
-                  <Plus>
-                    <img src={plus} alt="" />
-                  </Plus>
-                </a>
-              </Input>
+
+                <Plus>
+                  <img src={plus} alt="" />
+                </Plus>
+              </Wrapper>
             </Row>
             <div className="xs-hidden">
               <Action>
-                <a href="#">
-                  <ActionCancel>Cancel</ActionCancel>
-                </a>
-                <a href="#">
-                  <ActionApply>Apply</ActionApply>
-                </a>
+                <ActionCancel>Cancel</ActionCancel>
+
+                <ActionApply>Apply</ActionApply>
               </Action>
             </div>
             <div className="lg-hidden sm-hidden">

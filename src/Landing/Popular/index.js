@@ -65,7 +65,7 @@ export default function() {
       <div className="row rowscroll">
         {cards.map(function(el) {
           return (
-            <div className="col-3 col-sm-4 col-xs-6">
+            <div className="col-lg-3 col-sm-4 col-xs-6">
               <Card
                 img={el.img}
                 cook={el.cook}

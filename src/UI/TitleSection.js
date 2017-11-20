@@ -18,7 +18,7 @@ const H2Title = styled.h2`
 
 export default function(props) {
   return (
-    <div className="col-12 col-sm-12 col-xs-12">
+    <div className="col-lg-12 col-sm-12 col-xs-12">
       <H2Title>{props.name}</H2Title>
     </div>
   );

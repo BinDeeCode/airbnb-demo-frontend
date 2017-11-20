@@ -56,7 +56,7 @@ export default function(props) {
       <Information>{props.roomtype}</Information>
       <div>
         <img src={star} />
-        <Reviews>{props.superhot}</Reviews>
+        <Reviews>{props.superhost}</Reviews>
       </div>
     </Card>
   );
