@@ -10,9 +10,6 @@ export const Header = styled.header`
   background: #ffffff;
   border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
   height: 80px;
-  @media (max-width: 576px) {
-    width: 100%;
-  }
 `;
 
 export const Input = styled.input`
