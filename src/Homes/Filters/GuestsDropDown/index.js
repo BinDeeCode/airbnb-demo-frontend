@@ -221,87 +221,91 @@ const Minus = styled.div`
   box-sizing: border-box;
   border-radius: 22px;
 `;
-export default function() {
-  return (
-    <div>
-      <DropDownCard>
-        <GuestsCard>
-          <div>
-            <Row>
-              <Title>Adults</Title>
-              <Wrapper>
-                <a href="#">
+export default class RoomType extends React.Component {
+  render() {
+    return (
+      <div>
+        <DropDownCard>
+          <GuestsCard>
+            <div>
+              <Row>
+                <Title>Adults</Title>
+                <Wrapper>
+                  <a href="#">
+                    <Minus>
+                      <img src={minus} alt="" />
+                    </Minus>
+                  </a>
+                  <Count>0</Count>
+                  <a href="#">
+                    <Plus>
+                      <img src={plus} alt="" />
+                    </Plus>
+                  </a>
+                </Wrapper>
+              </Row>
+              <Row>
+                <Option>
+                  <Title>Children</Title>
+                  <Subtitle>Ages 2 — 12</Subtitle>
+                </Option>
+                <Wrapper>
                   <Minus>
                     <img src={minus} alt="" />
                   </Minus>
-                </a>
-                <Count>0</Count>
-                <a href="#">
+
+                  <Count>0</Count>
+
                   <Plus>
                     <img src={plus} alt="" />
                   </Plus>
-                </a>
-              </Wrapper>
-            </Row>
-            <Row>
-              <Option>
-                <Title>Children</Title>
-                <Subtitle>Ages 2 — 12</Subtitle>
-              </Option>
-              <Wrapper>
-                <Minus>
-                  <img src={minus} alt="" />
-                </Minus>
+                </Wrapper>
+              </Row>
+              <Row>
+                <Option>
+                  <Title>Infants</Title>
+                  <Subtitle>Under 2</Subtitle>
+                </Option>
+                <Wrapper>
+                  <Minus>
+                    <img src={minus} alt="" />
+                  </Minus>
 
-                <Count>0</Count>
+                  <Count>0</Count>
 
-                <Plus>
-                  <img src={plus} alt="" />
-                </Plus>
-              </Wrapper>
-            </Row>
-            <Row>
-              <Option>
-                <Title>Infants</Title>
-                <Subtitle>Under 2</Subtitle>
-              </Option>
-              <Wrapper>
-                <Minus>
-                  <img src={minus} alt="" />
-                </Minus>
+                  <Plus>
+                    <img src={plus} alt="" />
+                  </Plus>
+                </Wrapper>
+              </Row>
+              <div className="xs-hidden">
+                <Action>
+                  <ActionCancel onClick={this.props.onClose}>
+                    Cancel
+                  </ActionCancel>
 
-                <Count>0</Count>
-
-                <Plus>
-                  <img src={plus} alt="" />
-                </Plus>
-              </Wrapper>
-            </Row>
-            <div className="xs-hidden">
-              <Action>
-                <ActionCancel>Cancel</ActionCancel>
-
-                <ActionApply>Apply</ActionApply>
-              </Action>
+                  <ActionApply onClick={this.props.onApply}>Apply</ActionApply>
+                </Action>
+              </div>
+              <div className="lg-hidden sm-hidden">
+                <HeaderXs>
+                  <Close onClick={this.props.onClose}>
+                    <img src={close} alt="" />
+                  </Close>
+                  <div>Guest</div>
+                  <Reset>Reset</Reset>
+                </HeaderXs>
+              </div>
+              <div className="lg-hidden sm-hidden">
+                <Save>
+                  <ButtonSave>Save</ButtonSave>
+                </Save>
+              </div>
             </div>
-            <div className="lg-hidden sm-hidden">
-              <HeaderXs>
-                <Close>
-                  <img src={close} alt="" />
-                </Close>
-                <div>Guest</div>
-                <Reset>Reset</Reset>
-              </HeaderXs>
-            </div>
-            <div className="lg-hidden sm-hidden">
-              <Save>
-                <ButtonSave>Save</ButtonSave>
-              </Save>
-            </div>
-          </div>
-        </GuestsCard>
-      </DropDownCard>
-      <Background />
-    </div>
-  );
+          </GuestsCard>
+        </DropDownCard>
+        <Background />
+      </div>
+    );
+  }
 }

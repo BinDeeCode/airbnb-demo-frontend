@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import star from "../../UI/star.svg";
+import { Link } from "react-router-dom";
 
 const Img = styled.img`width: 100%;`;
 const Price = styled.div`
@@ -49,16 +50,15 @@ const Superhost = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 315px;
-
-  @media (max-width: 576px) {
-    width: 250px;
+  width: 250px;
+  @media (min-width: 576px) {
+    width: 315px;
   }
 `;
 
 export default function(props) {
   return (
-    <a href="#">
+    <Link to="/rooms">
       <Wrapper>
         <div>
           <Img src={props.img} alt="" />
@@ -73,6 +73,6 @@ export default function(props) {
           <Superhost>{props.supershot}</Superhost>
         </div>
       </Wrapper>
-    </a>
+    </Link>
   );
 }

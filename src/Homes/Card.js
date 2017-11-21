@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import star from "../UI/star.svg";
+import { Link } from "react-router-dom";
 
-const Card = styled.a`
+const Card = styled(Link)`
   margin-top: 24px;
   display: block;
   padding: 0;
@@ -47,7 +48,7 @@ const Reviews = styled.span`
 
 export default function(props) {
   return (
-    <Card href="#">
+    <Card to="/rooms">
       <Img src={props.img} />
       <Title>
         <Price>${props.price}</Price>
