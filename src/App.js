@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import styled from "styled-components";
-import "./gridstyle.css";
+
 import "./fonts/fonts.css";
+import "./flexboxgrid2.css";
 
 import { Route, BrowserRouter } from "react-router-dom";
 

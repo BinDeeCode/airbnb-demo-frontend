@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import CalendarDropDown from "./CalendarDropDown";
+import Dates from "./DatesDropDown";
 import Guests from "./GuestsDropDown";
+import RoomType from "./RoomTypeDropDown";
+import Price from "./PriceDropDown";
+import InstantBook from "./InstantBookDropDown";
 
 const Button = styled.button`
   outline: none;
@@ -27,7 +30,7 @@ const Button = styled.button`
 `;
 
 export default class DropDown extends React.Component {
-  state = { isOpen: false, openedFilter: "null" };
+  state = { isOpen: false, openedFilter: "dates" };
 
   toggleOpen = e => {
     !this.state.isOpen
@@ -50,14 +53,23 @@ export default class DropDown extends React.Component {
         </Button>
         {this.state.isOpen &&
           this.props.label == "Dates" && (
-            <CalendarDropDown
-              onApply={this.onApply}
-              onClose={this.toggleOpen}
-            />
+            <Dates onApply={this.onApply} onClose={this.toggleOpen} />
           )}
         {this.state.isOpen &&
           this.props.label == "Guests" && (
             <Guests onApply={this.onApply} onClose={this.toggleOpen} />
+          )}
+        {this.state.isOpen &&
+          this.props.label == "Room type" && (
+            <RoomType onApply={this.onApply} onClose={this.toggleOpen} />
+          )}
+        {this.state.isOpen &&
+          this.props.label == "Price" && (
+            <Price onApply={this.onApply} onClose={this.toggleOpen} />
+          )}
+        {this.state.isOpen &&
+          this.props.label == "Instant book" && (
+            <InstantBook onApply={this.onApply} onClose={this.toggleOpen} />
           )}
       </div>
     );
