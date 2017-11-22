@@ -60,7 +60,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Li = styled.a`
+export const A = styled.a`
   text-decoration: none;
   line-height: 24px;
   font-size: 14px;

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Rheostat from "rheostat";
 import "./slider.css";
 import price from "./price.svg";
+import { Background } from "../background";
+
 const DropDown = styled.div`
   width: 326px;
   position: fixed;
@@ -12,14 +14,6 @@ const DropDown = styled.div`
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   border-radius: 4px;
-`;
-const Background = styled.div`
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: -1;
 `;
 
 const Wrapper = styled.div`

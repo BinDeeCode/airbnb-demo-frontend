@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Row, Li, Logo, Header, Input, Container, Img } from "./style";
+import { Menu, Row, A, Logo, Header, Input, Container, Img } from "./style";
 
 import logo from "./logo.svg";
 import arrow from "./arrow.svg";
@@ -21,10 +21,10 @@ export default function() {
           <div className="xs-hidden sm-hidden col-lg-2" />
           <div className="xs-hidden sm-hidden col-lg-4">
             <Menu>
-              <Li href="#">Become a host</Li>
-              <Li href="#">Help</Li>
-              <Li href="#">Sign Up</Li>
-              <Li href="#">Log In</Li>
+              <A href="#">Become a host</A>
+              <A href="#">Help</A>
+              <A href="#">Sign Up</A>
+              <A href="#">Log In</A>
             </Menu>
           </div>
         </Row>

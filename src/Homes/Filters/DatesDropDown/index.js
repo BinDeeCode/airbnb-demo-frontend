@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Background } from "../background";
 import styled from "styled-components";
 import arrow from "./arrow.svg";
 import "react-dates/initialize";
@@ -26,7 +26,7 @@ const PickerControl = styled.div`
   font-size: 16px;
 `;
 
-const IsActive = styled.div`
+const CheckIn = styled.div`
   color: #0f7276;
   border-bottom: 1px solid #0f7276;
 `;
@@ -42,15 +42,6 @@ const DropDownCard = styled.div`
   @media (min-width: 576px) and (max-width: 992px) {
     left: 24px;
   }
-`;
-
-const Background = styled.div`
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: -1;
 `;
 
 const Wrapper = styled.div`
@@ -166,7 +157,7 @@ export default class CalendarDropDown extends React.Component {
                   <Reset>Reset</Reset>
                 </Control>
                 <CalendarControl>
-                  <IsActive>Check-in</IsActive>
+                  <CheckIn>Check-in</CheckIn>
                   <Arrow src={arrow} />
                   <div>Check-out</div>
                 </CalendarControl>
