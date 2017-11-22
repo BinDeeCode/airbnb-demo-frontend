@@ -3,6 +3,7 @@ import styled from "styled-components";
 import plus from "./plus.svg";
 import minus from "./minus.svg";
 import close from "./close.svg";
+import { Background } from "../background";
 
 const Subtitle = styled.div`
   font-family: "CircularAir", Arial, Helvetica, sans-serif;
@@ -96,15 +97,6 @@ const Row = styled.div`
   }
 `;
 
-const Background = styled.div`
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: -1;
-`;
-
 const GuestsCard = styled.div`
   z-index: 1;
 
@@ -146,8 +138,8 @@ const Save = styled.div`
 `;
 
 const ButtonSave = styled.button`
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 24px);
+  height: 48px;
   background: #ff5a5f;
   border-radius: 4px;
   color: white;
@@ -156,6 +148,10 @@ const ButtonSave = styled.button`
   font-size: 18px;
   outline: none;
   border: 0;
+
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
 `;
 
 const Option = styled.div`
@@ -231,17 +227,15 @@ export default class RoomType extends React.Component {
               <Row>
                 <Title>Adults</Title>
                 <Wrapper>
-                  <a href="#">
-                    <Minus>
-                      <img src={minus} alt="" />
-                    </Minus>
-                  </a>
+                  <Minus>
+                    <img src={minus} alt="" />
+                  </Minus>
+
                   <Count>0</Count>
-                  <a href="#">
-                    <Plus>
-                      <img src={plus} alt="" />
-                    </Plus>
-                  </a>
+
+                  <Plus>
+                    <img src={plus} alt="" />
+                  </Plus>
                 </Wrapper>
               </Row>
               <Row>
@@ -297,9 +291,7 @@ export default class RoomType extends React.Component {
                 </HeaderXs>
               </div>
               <div className="lg-hidden sm-hidden">
-                <Save>
-                  <ButtonSave>Save</ButtonSave>
-                </Save>
+                <ButtonSave>Save</ButtonSave>
               </div>
             </div>
           </GuestsCard>

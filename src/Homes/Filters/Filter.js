@@ -28,28 +28,30 @@ const Button = styled.button`
   background-color: ${props => (props.isOpen ? "#008489" : "white")};
   margin-left: 12px;
 `;
+const formatter = function(buttonLabel, showText, isOpen) {
+  return buttonLabel == "Dates" && isOpen ? showText : buttonLabel;
+};
 
 export default class DropDown extends React.Component {
-  state = { isOpen: false, openedFilter: "dates" };
+  state = { isOpen: false };
 
   toggleOpen = e => {
-    !this.state.isOpen
-      ? this.setState({ isOpen: true })
-      : this.setState({ isOpen: false });
+    this.setState({ isOpen: !this.state.isOpen });
   };
 
   onApply = e => {
     this.setState({ isOpen: false });
-    alert("Apply");
   };
 
   render() {
     return (
       <div>
         <Button isOpen={this.state.isOpen} onClick={this.toggleOpen}>
-          {this.state.isOpen && this.props.label == "Dates"
-            ? "Check in — Check out"
-            : this.props.label}
+          {formatter(
+            this.props.label,
+            "Check in — Check out",
+            this.state.isOpen
+          )}
         </Button>
         {this.state.isOpen &&
           this.props.label == "Dates" && (
