@@ -94,10 +94,50 @@ const Img = styled.img`
   top: 8px;
 `;
 
+const Button = styled.button`
+  outline: none;
+  position: relative;
+  height: 32px;
+  width: auto;
+  border: 1px solid rgba(72, 72, 72, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "CircularAir", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 12px;
+  color: #383838;
+  background-color: white;
+  margin-left: 12px;
+`;
+
+
+
 export default class RoomType extends React.Component {
+
+  openFilter = () => {
+    this.props.op == "roomtype" ? this.props.handleOpen("") : this.props.handleOpen("roomtype");
+  }
+
+
   render() {
     return (
-      <div>
+
+
+
+<div>
+      <Button onClick={this.openFilter}>
+          {this.props.lable}
+      </Button>
+
+      {
+  this.props.isOpen && 
+  <div>
         <DropDown>
           <Wrapper>
             <Type>
@@ -134,6 +174,7 @@ export default class RoomType extends React.Component {
           </PickerControl>
         </DropDown>
         <Background />
+      </div>}
       </div>
     );
   }

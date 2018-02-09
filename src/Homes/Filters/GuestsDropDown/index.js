@@ -178,6 +178,7 @@ const ActionCancel = styled.button`
   text-align: center;
   outline: none;
   color: #636363;
+  background-color: white;
 `;
 
 const ActionApply = styled.button`
@@ -191,6 +192,7 @@ const ActionApply = styled.button`
   color: #008489;
   outline: none;
   border: none;
+  background-color: white;
 `;
 const Count = styled.div`
   padding-left: 19px;
@@ -217,10 +219,55 @@ const Minus = styled.div`
   box-sizing: border-box;
   border-radius: 22px;
 `;
+
+
+
+const Button = styled.button`
+  outline: none;
+  position: relative;
+  height: 32px;
+  width: auto;
+  border: 1px solid rgba(72, 72, 72, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "CircularAir", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 12px;
+  color: #383838;
+  background-color: white;  
+  margin-left: 12px;
+`;
+
+
+
 export default class RoomType extends React.Component {
+
+  
+
+  openFilter = () => {
+    this.props.op == "guests" ? this.props.handleOpen("") : this.props.handleOpen("guests");
+  }
+
+
   render() {
     return (
-      <div>
+
+
+
+<div>
+      <Button onClick={this.openFilter}>
+          {this.props.lable}
+      </Button>
+
+      {
+  this.props.isOpen && 
+  <div>
         <DropDownCard>
           <GuestsCard>
             <div>
@@ -297,6 +344,8 @@ export default class RoomType extends React.Component {
           </GuestsCard>
         </DropDownCard>
         <Background />
+        </div>
+      }
       </div>
     );
   }

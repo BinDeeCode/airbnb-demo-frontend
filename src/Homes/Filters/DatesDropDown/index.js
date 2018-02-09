@@ -121,11 +121,46 @@ const CalendarControl = styled.div`
   color: #636363;
 `;
 
+const Button = styled.button`
+  outline: none;
+  position: relative;
+  height: 32px;
+  width: auto;
+  border: 1px solid rgba(72, 72, 72, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "CircularAir", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 12px;
+  color: #383838;
+  background-color: white;
+  margin-left: 12px;
+`;
+
 export default class CalendarDropDown extends React.Component {
+
+
+
+  openFilter = () => {
+   this.props.op == "dates" ?  this.props.handleOpen("") :  this.props.handleOpen("dates")  ;
+  }
+
   render() {
     return (
       <div>
-        <DropDownCard>
+      <Button  onClick={this.openFilter}>
+        {this.props.lable}
+      </Button>
+{
+  this.props.isOpen && 
+  <div>
+  <DropDownCard>
           <div className="sm-hidden xs-hidden">
             <DayPickerWrapper>
               <DayPicker hideKeyboardShortcutsPanel />
@@ -173,6 +208,10 @@ export default class CalendarDropDown extends React.Component {
           </div>
         </DropDownCard>
         <Background />
+        </div>
+}
+    
+        
       </div>
     );
   }
