@@ -100,8 +100,8 @@ const Button = styled.button`
   padding-left: 16px;
   padding-right: 16px;
   margin-left: 12px;
-  color: #383838;
-  background-color: white;
+  color: ${props => props.colorBut ? 'white' :  '#383838'}; 
+  background-color: ${props => props.colorBut ?   '#008489' : 'white'};
   margin-left: 12px;
 `;
 
@@ -119,8 +119,8 @@ export default class RoomType extends React.Component {
 
 
 <div>
-      <Button onClick={this.openFilter}>
-          {this.props.lable}
+      <Button colorBut={this.props.isOpen} onClick={this.openFilter}>
+          {this.props.label}
       </Button>
 
       {

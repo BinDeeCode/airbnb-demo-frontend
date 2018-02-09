@@ -42,11 +42,11 @@ openFilter = (key, open) => {
           <div className="row">
             <Div>
               <Wrapper>
-                <Dates isOpen={this.state.isOpen && this.state.oppenedFilter === "dates"} handleOpen={this.openFilter} op={this.state.oppenedFilter} lable="Dates"/>
-                <Guests isOpen={this.state.isOpen && this.state.oppenedFilter === "guests"} handleOpen={this.openFilter} op={this.state.oppenedFilter} lable="Guests"/>
-                <RoomType isOpen={this.state.isOpen && this.state.oppenedFilter === "roomtype"} handleOpen={this.openFilter} op={this.state.oppenedFilter} lable="Room Type"/>
-                <Price isOpen={this.state.isOpen && this.state.oppenedFilter === "price"} handleOpen={this.openFilter} op={this.state.oppenedFilter} lable="Price"/>
-                <Instant isOpen={this.state.isOpen && this.state.oppenedFilter === "instant"} handleOpen={this.openFilter} op={this.state.oppenedFilter} lable="Instant"/>
+                <Dates isOpen={this.state.isOpen && this.state.oppenedFilter === "dates"} handleOpen={this.openFilter} op={this.state.oppenedFilter} label="Dates"/>
+                <Guests isOpen={this.state.isOpen && this.state.oppenedFilter === "guests"} handleOpen={this.openFilter} op={this.state.oppenedFilter} label="Guests"/>
+                <RoomType isOpen={this.state.isOpen && this.state.oppenedFilter === "roomtype"} handleOpen={this.openFilter} op={this.state.oppenedFilter} label="Room Type"/>
+                <Price isOpen={this.state.isOpen && this.state.oppenedFilter === "price"} handleOpen={this.openFilter} op={this.state.oppenedFilter} label="Price"/>
+                <Instant isOpen={this.state.isOpen && this.state.oppenedFilter === "instant"} handleOpen={this.openFilter} op={this.state.oppenedFilter} label="Instant"/>
               </Wrapper>
             </Div>
           </div>
