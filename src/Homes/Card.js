@@ -12,7 +12,9 @@ const Img = styled.img`
   width: 100%;
 `;
 
-const Title = styled.div`margin-top: 8px;`;
+const Title = styled.div`
+  margin-top: 8px;
+`;
 const Information = styled.div`
   font-family: "Circular Air Light", Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -32,6 +34,9 @@ const Name = styled.span`
   margin: 0;
   margin: 0;
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
   color: #383838;
   font-family: "CircularAir", Arial, Helvetica, sans-serif;
   font-weight: bold;
