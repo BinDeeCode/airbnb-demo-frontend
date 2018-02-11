@@ -28,7 +28,7 @@ export default class Homes extends React.Component {
   render() {
     return (
       <List>
-        {/*  <button>Click me</button> */}
+        <button>Click me</button>
         <div className="row">
           <div className="col-lg-6 col-sm-6">
             <Card
