@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
 import Card from "./Card";
+import svg from "./circles.svg";
 
 const List = styled.div`
   float: left;
@@ -13,6 +14,20 @@ const List = styled.div`
   @media (min-width: 576px) and (max-width: 992px) {
     width: 100%;
   }
+`;
+
+const Loading = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+`;
+
+const LoadSvg = styled.img`
+  width: 30px;
+  height: 30px;
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 100%;
 `;
 
 export default class Homes extends React.Component {
@@ -32,14 +47,19 @@ export default class Homes extends React.Component {
 
   render() {
     if (this.state.items === null) {
-      return "";
+      return (
+        <Loading>
+          <LoadSvg src={svg} />
+        </Loading>
+      );
     } else
       return (
         <List>
           <div className="row">
             <div className="col-lg-6 col-sm-6">
               <Card
-                img={this.state.items[0].images[0].picture}
+                onClick={this.changeImgCount}
+                img={this.state.items[0].images[3].picture}
                 price={this.state.items[0].price}
                 name={this.state.items[0].name}
                 roomtype={
