@@ -16,68 +16,79 @@ const List = styled.div`
   }
 `;
 
-export default function() {
-  return (
-    <List>
-      <div className="row">
-        <div className="col-lg-6 col-sm-6">
-          <Card
-            img={data[0].img}
-            price={data[0].price}
-            name={data[0].name}
-            roomtype={data[0].roomtype}
-            superhost={data[0].superhost}
-          />
+/* fetch("https://airbnb-demo-api.now.sh/v1/homes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json.items[0].name);
+  });
+ */
+export default class Homes extends React.Component {
+  render() {
+    return (
+      <List>
+        {/*  <button>Click me</button> */}
+        <div className="row">
+          <div className="col-lg-6 col-sm-6">
+            <Card
+              img={data[0].img}
+              price={data[0].price}
+              name={data[0].name}
+              roomtype={data[0].roomtype}
+              superhost={data[0].superhost}
+            />
+          </div>
+          <div className="col-lg-6 col-sm-6">
+            <Card
+              img={data[1].img}
+              price={data[1].price}
+              name={data[1].name}
+              roomtype={data[1].roomtype}
+              superhost={data[1].superhost}
+            />
+          </div>
+          <div className="col-lg-6 col-sm-6">
+            <Card
+              img={data[2].img}
+              price={data[2].price}
+              name={data[2].name}
+              roomtype={data[2].roomtype}
+              superhost={data[2].superhost}
+            />
+          </div>
+          <div className="col-lg-6 col-sm-6">
+            <Card
+              img={data[3].img}
+              price={data[3].price}
+              name={data[3].name}
+              roomtype={data[3].roomtype}
+              superhost={data[3].superhost}
+            />
+          </div>
+          <div className="col-lg-6 col-sm-6">
+            <Card
+              img={data[4].img}
+              price={data[4].price}
+              name={data[4].name}
+              roomtype={data[4].roomtype}
+              superhost={data[4].superhost}
+            />
+          </div>
+          <div className="col-lg-6 col-sm-6 ">
+            <Card
+              img={data[5].img}
+              price={data[5].price}
+              name={data[5].name}
+              roomtype={data[5].roomtype}
+              superhost={data[5].superhost}
+            />
+          </div>
+          <div className=" col-lg-12 col-sm-12">
+            <Footer />
+          </div>
         </div>
-        <div className="col-lg-6 col-sm-6">
-          <Card
-            img={data[1].img}
-            price={data[1].price}
-            name={data[1].name}
-            roomtype={data[1].roomtype}
-            superhost={data[1].superhost}
-          />
-        </div>
-        <div className="col-lg-6 col-sm-6">
-          <Card
-            img={data[2].img}
-            price={data[2].price}
-            name={data[2].name}
-            roomtype={data[2].roomtype}
-            superhost={data[2].superhost}
-          />
-        </div>
-        <div className="col-lg-6 col-sm-6">
-          <Card
-            img={data[3].img}
-            price={data[3].price}
-            name={data[3].name}
-            roomtype={data[3].roomtype}
-            superhost={data[3].superhost}
-          />
-        </div>
-        <div className="col-lg-6 col-sm-6">
-          <Card
-            img={data[4].img}
-            price={data[4].price}
-            name={data[4].name}
-            roomtype={data[4].roomtype}
-            superhost={data[4].superhost}
-          />
-        </div>
-        <div className="col-lg-6 col-sm-6 ">
-          <Card
-            img={data[5].img}
-            price={data[5].price}
-            name={data[5].name}
-            roomtype={data[5].roomtype}
-            superhost={data[5].superhost}
-          />
-        </div>
-        <div className=" col-lg-12 col-sm-12">
-          <Footer />
-        </div>
-      </div>
-    </List>
-  );
+      </List>
+    );
+  }
 }
